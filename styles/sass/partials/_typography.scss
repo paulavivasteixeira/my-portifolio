@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+// Font types
+
+// Lora Regular
+@font-face {
+    font-family: 'Lora Regular';
+    src: url('../../fonts/Lora/static/Lora-Regular.ttf')
+}
+
+// Lora Italic
+@font-face {
+    font-family: 'Lora Italic';
+    src: url('../../fonts/Lora/static/Lora-Italic.ttf')
+}
+
+// Roboto Bold
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(../../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+// --------------------------
+html {
+    font-size: 125%;
+}
+
+
+h1 {
+    font-family: $bodyFont;
+    font-size: clamp(2.7rem, 8vw, 7rem);
+    color: $darkColor;
+}
+
+h2 {
+    font-family: 'Lora Italic';
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    color: $lightPink;
+}
+
+h3 {
+    font-family: $bodyFont;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    color: $darkColor;
+}
+
+article,
+legend,
+label,
+p,
+a {
+    font-family: $bodyFont;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.5rem;
+
+}

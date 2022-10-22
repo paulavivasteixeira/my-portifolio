@@ -1,0 +1,283 @@
+@use "variables" as *;
+
+// About Me Section
+.aboutMe {
+  min-height: 60vh;
+}
+
+.profileImg {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    border: 5px solid $lightPink;
+    width: 250px;
+    height: 250px;
+  }
+  h3 {
+    color: $medColor;
+    border-bottom: 2px solid $lightPink;
+  }
+  article {
+    text-align: justify;
+  }
+}
+
+.fa-angle-down {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  border: 2px solid $lightPink;
+  text-align: center;
+  padding-top: 2px;
+  background-color: $lightPink;
+}
+
+// Skill and Tool Section
+.skills {
+  background-color: $lightColor;
+  color: $white;
+  min-height: 40vh;
+}
+
+.displaySkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  padding: 5vh 0;
+  div {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $darkColor;
+    transition: 0.3s;
+    padding: 1%;;
+      &:hover,
+      &:focus {
+        color: $lightPink;
+        background-color: $darkColor;
+        border-radius: 10px;
+        padding-top: 1rem;
+        transform: scale(1.1);
+      }  
+    }
+  }
+
+// Project Section
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  // width: 80%;
+  gap: 2rem;
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    border: 1px solid $lightColor;
+    width: 50%;
+    width: clamp(250px, 8vw, 350px);
+    min-height: 40vh;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: calc(90% / 2 - 1vw);
+  }
+}
+
+.projectImg {
+  width: clamp(250px, 8vw, 350px);
+  img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// Contact Section
+.contact {
+  background-color: $lightColor;
+  color: $white;
+  padding: 11vh 0;
+  position: relative;
+}
+
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactHover {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+  div {
+    transition: 0.3s;
+    color: $darkColor;
+    a {
+      padding: 2rem;
+      transition: 0.3s;
+    }
+    i {
+      color: $darkColor;
+      }          
+    .contactPHover {
+      color: $lightColor;
+      font-size: 18px;
+      text-align: center;
+    }
+    &:hover,
+    &:focus {
+      color: $lightPink;
+      background-color: $darkColor;
+      border-radius: 10px;
+      padding: 0.8rem 0.2rem 0.2rem;
+      transform: scale(1.1);
+      i,
+      .contactPHover {
+        color: $lightPink;
+      }
+    }    
+  }
+}
+
+.emailMe {
+  padding-top: 2rem;
+  display: flex;
+}
+.emailHeader{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+// .emailHeader::before {
+//   content: "";
+//   border-top: 1ps solid $lightPink;
+//   width: 100%;
+//   height: 10%;
+// }
+
+.emailP {
+  color: $lightPink;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+fieldset {
+  color: $darkColor;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.077);
+  padding: 2rem 0 3rem;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  width: 650px;
+  justify-content: flex-start;
+}
+
+label {
+  text-align: center;
+  padding: 5px;
+  color: $darkColor;
+}
+
+input,
+textarea {
+  color: $darkColor;
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color:  rgba(255, 255, 255, 0.18);
+  width: 300px;	
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px auto 10px;
+  text-align: center;
+  transition-duration: 0.25s;
+  &:hover,
+  &:focus {
+    border: 1px solid $lightPink;
+    background-color: hsl(0, 79%, 99%);
+  }
+  placeholder {
+    color: $darkColor;
+  }
+}
+
+textarea {
+  height: 150px;
+}
+
+.fa-angles-up {
+  position: absolute;
+  font-size: 1.6rem;
+  right: 5vw;
+  bottom: 3vh;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  border: 2px solid $lightPink;
+  text-align: center;
+  padding-top: 10px;
+  background-color: $lightPink;
+  color: $white;
+}
+
+// .fa-angles-up::before{
+//   content: "";
+//   top: 120%;
+//   left: 0;
+//   width: 100%;
+//   height: 50%;
+//   transform: perspective(3em) rotateX(45deg);
+//   filter: blur(1em);
+//   opacity: 0.5;
+//   border: 2px solid red;
+// }

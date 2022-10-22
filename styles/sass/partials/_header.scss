@@ -1,0 +1,75 @@
+@use "variables" as *;
+
+header {
+    height: 100vh;
+    background: $lightColor; 
+    color: $white;
+    position: relative;
+    a {
+        color: $white;
+    }
+}
+
+.skipToMain {
+    padding: 15px;
+    text-align: center;
+    a {
+      color: $lightColor;
+      font-size: 15px;
+      padding: 5px;
+      &:hover,
+      &:focus {
+        color: $darkColor;
+        border: 1px solid $lightColor;
+      }
+    }
+}
+
+.topHeader {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    margin-right: 5%;
+    a {
+      color: $darkColor;
+      padding: 20px;
+      cursor: pointer;
+      &:hover {
+        transition: 0.2s;          
+        border-bottom: 3px solid $lightPink;
+        background-color: transparent;
+        border-radius: 5%; 
+      }
+      &:focus {
+        border: 2px solid $white;
+        background-color: none;
+        border-radius: 10%;     
+      }
+    }
+}
+
+.paulaHeader {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    padding: 40vh 0;
+}
+
+.name {
+  display: inline-block;
+}
+
+.lasName {
+  display: inline-block;
+}
+

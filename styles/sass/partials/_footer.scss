@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+footer {
+    color: $darkColor;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    color: $darkColor;
+    a {
+        color: $darkColor;
+        font-weight: bold;
+    }
+}
+
