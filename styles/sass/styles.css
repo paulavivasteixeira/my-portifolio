@@ -240,14 +240,14 @@ html {
 h1 {
   font-family: "Lora Regular";
   color: #20413A;
-  font-size: clamp(2.7rem, 5vw, 6rem);
+  font-size: clamp(5rem, 8vw, 8rem);
   display: flex;
   flex-direction: column;
 }
 
 h2 {
-  font-family: "Lora Italic";
-  font-size: clamp(1.6rem, 3vw, 3rem);
+  font-family: "Roboto";
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
   color: #FBDDDD;
   width: 80%;
 }
@@ -277,7 +277,7 @@ a {
 
 .wrapper {
   max-width: 1440px;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -394,34 +394,27 @@ header a {
 .paulaHeader {
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  width: 45vw;
+  height: 70vh;
   justify-content: center;
-  padding: 40vh 0;
-}
-
-.name {
-  padding-left: 3rem;
+  position: relative;
+  padding-left: 25%;
 }
 
 .lastName {
   color: #4D6753;
   font-size: clamp(1.8rem, 3vw, 4rem);
-  padding-left: 3rem;
 }
 
 .title {
-  padding-left: 3rem;
-  index: 3;
   position: relative;
-  color: rgba(186, 184, 184, 0.567);
-}
-.title::before {
-  content: "Front-End Developer";
   color: #20413A;
-  position: absolute;
-  index: 1;
-  top: 4px;
+  margin-top: -2rem;
+  margin-left: -4%;
+}
+.title::after {
+  content: "</>";
+  color: #20413A;
+  font-size: 3rem;
 }
 
 .buttonDown1 {
@@ -429,13 +422,13 @@ header a {
   height: 4vh;
   padding-left: 5vw;
   bottom: 4rem;
-  index: 5;
 }
 
 .aboutMe {
   min-height: 40vh;
   padding-bottom: 1.5rem;
   margin: 2rem auto;
+  position: relative;
 }
 .aboutMe h3 {
   padding-top: 2rem;
@@ -475,10 +468,21 @@ header a {
   text-align: justify;
 }
 
+.buttonDown4 {
+  position: absolute;
+  height: 4vh;
+  left: -10px;
+  bottom: 4rem;
+  display: none;
+}
+.buttonDown4 i {
+  color: #fff;
+}
+
 .skills {
   background-color: #BaC2AB;
   color: #fff;
-  min-height: 65vh;
+  min-height: 55vh;
   padding: 2rem auto;
   position: relative;
 }
@@ -494,9 +498,9 @@ header a {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
-  width: clamp(150px, 65vw, 920px);
+  width: 100%;
   min-height: 28vh;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 .skillsContainer div {
   width: 160px;
@@ -527,10 +531,13 @@ header a {
   height: 4vh;
   padding-left: 5vw;
   bottom: 4rem;
-  index: 5;
 }
 .buttonDown2 i {
   color: #fff;
+}
+
+.projectsSection {
+  position: relative;
 }
 
 .projects {
@@ -553,7 +560,8 @@ header a {
 .projectsContainer .project2,
 .projectsContainer .project3,
 .projectsContainer .project4 {
-  width: 25vw;
+  min-width: 25vw;
+  max-width: 350px;
   min-height: 35vh;
   display: flex;
   flex-direction: column;
@@ -566,6 +574,7 @@ header a {
 .projectsContainer .projectContainerLocal {
   padding: 10px 20px;
   width: 100%;
+  min-width: 350px;
 }
 
 .projectImg {
@@ -583,11 +592,10 @@ header a {
 }
 
 .fa-bars-progress {
-  display: flex;
-  justify-content: center;
   font-size: 13rem;
-  align-items: center;
   color: #20413A;
+  min-width: 350px;
+  margin-left: 10%;
 }
 
 .toolsDescription {
@@ -617,7 +625,6 @@ header a {
   height: 4vh;
   padding-left: 5vw;
   bottom: 4rem;
-  index: 5;
 }
 .buttonDown3 i {
   color: #fff;
@@ -628,7 +635,7 @@ header a {
   color: #fff;
   position: relative;
   padding-bottom: 2rem;
-  min-height: 90vh;
+  min-height: 70vh;
   position: relative;
 }
 
@@ -772,7 +779,7 @@ textarea {
   border-radius: 10px;
   padding: 7px;
   margin: 5px auto 15px;
-  text-align: center;
+  text-align: start;
   transition-duration: 0.25s;
 }
 input:hover, input:focus,
@@ -819,8 +826,8 @@ footer {
 }
 .navMenu a {
   color: #20413A;
-  padding: 15px 50px;
   cursor: pointer;
+  padding: 15px 40px;
 }
 .navMenu a:hover {
   transition: 0.2s;
@@ -861,10 +868,23 @@ footer {
   transform: translateY(6px);
 }
 
-/* 1200px screen-size devices and smaller */
-@media (max-width: 1200px) {
+/* 1400px screen-size devices and smaller */
+@media (max-width: 1400px) {
   .wrapper {
     width: 86%;
+  }
+}
+/* 1200px screen-size devices and smaller */
+@media (max-width: 1200px) {
+  .paulaHeader {
+    padding-left: 15%;
+  }
+  .title {
+    margin-left: 0;
+    max-width: 60%;
+  }
+  .title::after {
+    font-size: 2.2rem;
   }
   .aboutContainer {
     flex-direction: column;
@@ -874,24 +894,83 @@ footer {
   .aboutContainer .profileImg {
     height: auto;
   }
-  .skillsContainer {
-    width: 100%;
+  .buttonDown4 {
+    display: block;
+  }
+  .projectsContainer {
+    gap: 1.5rem;
   }
   .project1,
 .project2,
 .project3,
 .project4 {
-    width: 650px;
     flex-direction: column;
   }
-  .projectContainer1 {
-    padding: 5px 15px;
-    width: 450px;
-  }
 }
-/* 700px screen-size devices and smaller */
+/* 800px screen-size devices and smaller */
 @media (max-width: 800px) {
   .wrapper {
+    width: 90%;
+  }
+  .paulaHeader {
+    padding-left: 10%;
+  }
+  .title {
+    margin-left: 0;
+    max-width: 85%;
+  }
+  .title::after {
+    font-size: 2.2rem;
+  }
+  .aboutMeText {
+    width: 125%;
+  }
+  .buttonDown2,
+.buttonDown4 {
+    bottom: 1.5rem;
+  }
+  .skillsContainer {
+    gap: 1rem;
+  }
+  .emailHeader {
+    width: 90%;
+    justify-content: flex-start;
+  }
+  fieldset {
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
+  fieldset div {
+    width: 95%;
+  }
+  form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  form button,
+form label,
+form input,
+form textarea {
+    max-width: 350px;
+    width: 100%;
+  }
+  .fa-angle-down {
+    width: 50px;
+    height: 50px;
+  }
+  i {
+    font-size: 2rem;
+  }
+  .fa-angles-up {
+    font-size: 1.3rem;
+    width: 50px;
+    height: 50px;
+    bottom: 3vh;
+  }
+  .contactContainer {
     width: 90%;
   }
 }
@@ -900,22 +979,56 @@ footer {
   .wrapper {
     width: 92%;
   }
+  .title {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .title::after {
+    font-size: 1.6rem;
+  }
+  .emailHeader {
+    width: 95%;
+    padding-left: 20px;
+  }
+  fieldset {
+    width: 90%;
+    left: 25px;
+  }
+  fieldset div {
+    width: 90%;
+  }
+  form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  form button,
+form label,
+form input,
+form textarea {
+    width: 300px;
+  }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .navBar {
     display: flex;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-right: 2rem;
+    z-index: 10;
   }
   .navToggler {
     display: block;
+  }
+  .navToggler:hover, .navToggler:focus {
+    background-color: #BaC2AB;
+    border: 1px solid lightgray;
   }
   .navMenu {
     display: block;
     position: absolute;
     width: 100%;
-    height: 22vh;
+    height: 25vh;
     top: 60px;
     flex-direction: column;
     align-items: center;

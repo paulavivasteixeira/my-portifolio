@@ -1,12 +1,22 @@
-const hamburgerBtn = document.querySelector(".navToggler");
-const navMenu = document.querySelector(".navMenu");
+const app = {};
 
-hamburgerBtn.addEventListener("click", () => {
-  hamburgerBtn.classList.toggle("active");
-  navMenu.classList.toggle("active");
+// DOM Elements
+app.hamburgerBtn = document.querySelector(".navToggler");
+app.navMenu = document.querySelector(".navMenu");
+
+
+
+// Responsive Nav Bar
+app.hamburgerBtn.addEventListener("click", () => {
+  app.hamburgerBtn.classList.toggle("active");
+  app.navMenu.classList.toggle("active");
 })
 
 document.querySelectorAll('.navItem').forEach(n => n.addEventListener("click", () => {
-  hamburgerBtn.classList.remove("active");
-  navMenu.classList.remove("active");
+  app.hamburgerBtn.classList.remove("active");
+  app.navMenu.classList.remove("active");
 }))
+// end Nav Bar
+
+app.init();
+

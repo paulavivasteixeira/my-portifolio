@@ -29,15 +29,15 @@ html {
 h1 {
     font-family: $bodyFont;
     color: $darkColor;
-    font-size: clamp(2.7rem, 5vw, 6rem);
+    font-size: clamp(5rem, 8vw, 8rem);
     display: flex;
     flex-direction: column;
     
 }
 
 h2 {
-    font-family: 'Lora Italic';
-    font-size: clamp(1.6rem, 3vw, 3rem);
+    font-family: 'Roboto';
+    font-size: clamp(2.1rem, 4vw, 3.5rem);
     color: $lightPink;
     width: 80%;
 
