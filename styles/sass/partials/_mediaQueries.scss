@@ -1,0 +1,57 @@
+@use "variables" as *;
+
+/* 1200px screen-size devices and smaller */
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 86%;
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .profileImg {
+            height: auto;
+        }
+    }
+
+    .skillsContainer {
+        width: 100%;
+    
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        width: 650px;
+        flex-direction: column;
+    }
+
+    .projectContainer1 {
+        padding: 5px 15px; 
+        width: 450px;
+    }
+
+}
+
+
+/* 700px screen-size devices and smaller */
+@media (max-width: 800px) {
+    .wrapper {
+        width: 90%;
+      }
+
+}
+
+
+
+
+
+/* 400px screen-size devices and smaller */
+@media (max-width: 400px) {
+    .wrapper {
+        width: 92%;
+      }
+
+}

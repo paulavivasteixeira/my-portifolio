@@ -1,10 +1,13 @@
 @use "variables" as *;
 
 header {
-    height: 100vh;
-    background: $lightColor; 
+    height: 98vh;
+    background: #bac2ab49;  
+    width: 99%;
+    margin: 0 auto;
     color: $white;
     position: relative;
+    margin-top: 10px;
     a {
         color: $white;
     }
@@ -14,7 +17,7 @@ header {
     padding: 15px;
     text-align: center;
     a {
-      color: $lightColor;
+      color: transparent;
       font-size: 15px;
       padding: 5px;
       &:hover,
@@ -32,44 +35,43 @@ header {
     justify-content: space-between;
 }
 
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 30vw;
-    margin-right: 5%;
-    a {
-      color: $darkColor;
-      padding: 20px;
-      cursor: pointer;
-      &:hover {
-        transition: 0.2s;          
-        border-bottom: 3px solid $lightPink;
-        background-color: transparent;
-        border-radius: 5%; 
-      }
-      &:focus {
-        border: 2px solid $white;
-        background-color: none;
-        border-radius: 10%;     
-      }
-    }
-}
-
 .paulaHeader {
     display: flex;
     flex-direction: column;
     height: 80vh;
-    align-items: center;
+    width: 45vw;
     justify-content: center;
     padding: 40vh 0;
 }
 
 .name {
-  display: inline-block;
+  padding-left: 3rem;
 }
 
-.lasName {
-  display: inline-block;
+.lastName {
+  color: $medColor;
+  font-size: clamp(1.8rem, 3vw, 4rem);
+  padding-left: 3rem;
 }
 
+.title {
+      padding-left: 3rem;
+      index:3;
+      position: relative;
+      color: rgba(186, 184, 184, 0.567);
+      &::before {
+        content: "Front-End Developer";
+        color: $darkColor;
+        position: absolute;
+        index: 1;
+        top: 4px;        
+      }
+}
+
+.buttonDown1 {
+  position: absolute;
+  height: 4vh;
+  padding-left: 5vw;
+  bottom: 4rem;
+  index: 5;
+}

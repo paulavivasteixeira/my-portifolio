@@ -8,3 +8,8 @@
 @use "partials/header";
 @use "partials/main";
 @use "partials/footer";
+@use "partials/navBar";
+
+// Media Queries
+@use "./partials/mediaQueries";
+@use "./partials/navBarMediaQueries"

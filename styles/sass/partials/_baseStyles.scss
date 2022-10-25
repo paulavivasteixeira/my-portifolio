@@ -28,4 +28,50 @@ i {
   font-size: 2.5rem;
 }
 
+.fa-angle-down {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  border: 2px solid $lightPink;
+  text-align: center;
+  padding-top: 2px;
+  background-color: $lightPink;
+  box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495)
+}
+
+.buttonStyle {
+  position: absolute;
+  animation: bounce 0.5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  1% {
+    height: 2px;
+    transform: translateY(2px);
+  }
+}
+
+.fa-angles-up {
+  position: absolute;
+  font-size: 1.6rem;
+  right: 5vw;
+  bottom: 5vh;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  border: 2px solid $lightPink;
+  text-align: center;
+  padding-top: 10px;
+  background-color: $lightPink;
+  color: $white;
+  box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
+  transition: 0.3s;
+  &:hover {
+    transform: scale(90%);
+    box-shadow: 4px 4px 4px 4px rgba(134, 132, 132, 0.495);
+  }
+}
+
 

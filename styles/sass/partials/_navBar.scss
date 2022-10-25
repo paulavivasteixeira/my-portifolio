@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+.navBar {
+ padding-top: 22px;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    margin-right: 15vw;
+    li {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    a {
+      color: $darkColor;
+      padding: 15px 50px;
+      cursor: pointer;
+      &:hover {
+        transition: 0.2s;          
+        background-color: #4d675326;
+        border-radius: 10px; 
+      }
+      &:focus {
+        border: 2px solid $white;
+        background-color: none;
+        border-radius: 10%;     
+      }
+    }
+}
+
+
+.navToggler {
+    border: 3px solid $darkColor;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.navToggler span,
+.navToggler span::before,
+.navToggler span:after {
+    width: 30px;
+    height: 3px;
+    background-color: $darkColor;
+    display: block;
+    transition: 0.3s;
+}
+
+.navToggler span:before {
+    content: "";
+    transform: translateY(-9px);
+}
+
+.navToggler span:after{
+    content: "";
+    transform: translateY(6px);
+}

@@ -27,17 +27,23 @@
     <header id="home">
       
       <section class="topHeader">
+
         <!-- Skip to Main Contact Link -->
         <div class="skipToMain">
           <a href="#mainContent" aria-label="Click here to skip to main content" >Skip to main content</a>
         </div>
           
-        <ul class="navBar wrapper">
-          <li><a href="#home" aria-label="go to home section.">Home</a></li>
-          <li><a href="#about" aria-label="go to about section.">About</a></li>
-          <li><a href="#projects" aria-label="go to projects section.">Projects</a></li>
-          <li><a href="#contact" aria-label="go to contact section.">Contact</a></li>
-        </ul>
+        <nav class="navBar">
+
+          <ul class="navMenu wrapper">
+            <li class="navItem"><a href="#home" aria-label="go to home section.">Home</a></li>
+            <li class="navItem"><a href="#about" aria-label="go to about section.">About</a></li>
+            <li class="navItem"><a href="#projects" aria-label="go to projects section.">Projects</a></li>
+            <li class="navItem"><a href="#contact" aria-label="go to contact section.">Contact</a></li>
+          </ul>
+
+          <button class="navToggler" arial-label="menu list button"><span></span></button>
+        </nav>
       </section> 
 
       <section class="paulaHeader">
@@ -45,9 +51,12 @@
           <span class="name">Paula</span>
           <span class="lastName">Vivas Teixeira</span>
         </h1>
-        <h2>Front-End Developer</h2>
-        <a class="buttonStyle" href="#about" aria-label="go to Contact section."><i class="fa-solid fa-angle-down"></i></a>
-      </section>
+        <h2 class="title">Front-End Developer</h2>
+        </section>
+
+      <div class="buttonDown1">
+        <a class="buttonStyle btnStyleHeader" href="#about" aria-label="go to About section."><i class="fa-solid fa-angle-down"></i></a>
+      </div>
 
       
     </header>
@@ -56,15 +65,21 @@
     <!-- Main Section starts here -->
     <main class="mainSection" id="mainContent">
       
+      <!-- About Session starts here -->
       <section class="aboutMe wrapper" id="about">
-        <div class="profileImg">
-          <img src="./assets/cartoon1.jpeg" alt="Paula's headshot. Paula has light skin, dark brown hair and eyes. She is wearing a black shirts and blazer, and a red lipstick" />
-          <h3>Hi, I'm Paula</h3>
-          <p class="abouMeText">I am a Front-End developer graduated at <a href="https://junocollege.com/">Juno College of Technology</a>.I also have a degree in Public Relations and  14 years of experience in event planning.</p>
-          <p class="abouMeText"> I organized virtual events, using different virtual events platforms and learned several online tools to enhance the virtual experience. I wanted to know more about building websites and platforms and this way I discovered a passion for web development. I transferred my knowledge in creating PR projects and planning events to learn how to build online places to connect people and promote unique experiences. All my projects are focused on creating an inclusive and diverse environment.</p>
+        <h3>Hi, I'm Paula</h3>
+        <div class="aboutContainer">
+          <div class="profileImg">
+            <img src="./assets/cartoon1.jpeg" alt="Paula's headshot. Paula has light skin, dark brown hair and eyes. She is wearing a black shirts and blazer, and a red lipstick" />
+          </div>
+          <div class="aboutMeText">
+            <p>I am a Front-End developer graduated at <a href="https://junocollege.com/">Juno College of Technology</a>. I also have a degree in Public Relations and  14 years of experience in event planning for foundations and public sector.</p>
+            <p> I bring to web development my organization, communications and problem-solving skills. All my projects are focused on creating inclusive experiences.</p>
+            </div>
         </div>
       </section>
       
+      <!-- Skills Session starts here -->
       <section class="skills" id="skills">
         <div class="displaySkills wrapper">
           <div>
@@ -73,14 +88,10 @@
           
           <div class="skillsContainer">
             <div>
-              <!-- <i class="fa-regular fa-laptop-mobile"></i> -->
+              <i class="fa-solid fa-universal-access"></i>
               <p>accessibility</p>
             </div>
             
-            <div>
-              <!-- <i class="fa-solid fa-laptop-mobile"></i> -->
-              <p>Responsive Design</p>
-            </div>
             
             <div>
               <i class="fa-brands fa-html5"></i>
@@ -102,10 +113,6 @@
               <p>javascript</p>
             </div>
             
-            <div>
-              <i class="fa-brands fa-node-js"></i>
-              <p>Node JS</p>
-            </div>
             
             <div>
               <i class="fa-brands fa-react"></i>
@@ -118,24 +125,32 @@
             </div>
             
             <div>
-              <!-- <i class="fa-brands fa-"></i> -->
-              <p>rest apis</p>
+              <img class="restApi" src="./assets/api.png" alt="Rest APIs icon">
+              <p>rest APIs</p>
             </div>
             
+            <div>
+              <i class="fa-solid fa-mobile-screen"></i>
+              <p>Responsive Design</p>
+            </div>
+
             <div>
               <i class="fa-brands fa-git-alt"></i>
               <p>git</p>
             </div>
             
-            <div>
-              <i class="fa-brands fa-github"></i>
-              <p>github</p>
-            </div>  
           </div>
         </div>
+
+        <div class="buttonDown2">
+          <a class="buttonStyle" href="#projects" aria-label="go to About section."><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+
       </section>
       
-      <section id="projects">
+      <!-- Projects Session starts here -->
+      <section class="projectsSection" id="projects">
+        
         <div class="projects wrapper">
           <div class="projectsHeader">
             <h3>Projects</h3>
@@ -144,80 +159,75 @@
           <div class="projectsContainer">
             <div class="project1">
               <div class="projectImg">
-                <img src="" alt=""> 
+                <img src="./assets/auroraProject.png" alt="screenshot of Arora's website"> 
               </div>
-              <div>
-                <h4>Arora</h4>
-                <p class="toolsDescription">HTML5, CSS</p>
-                <a href="https://github.com/paulavivasteixeira/Arora">
-                  <p>GitHub Repo</p>
-                </a>
-                <a href="">
-                  <p>Live Site</p>
-                </a>
+              <div class="projectContainerLocal">
+                <div>
+                  <h4>Project: Arora</h4>
+                  <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></p>
+                  <a class="projectLinkStyle" href="https://github.com/paulavivasteixeira/Arora">GitHub Repo</a>
+                  <a class="projectLinkStyle" href="https://sage-kulfi-94e866.netlify.app">Live Site</a>
+                </div>
               </div>
             </div>
             
             <div class="project2">
               <div class="projectImg">
-                <img src="" alt=""> 
+                <img src="./assets/underTheSea.png" alt="screenshot of the Under the Sea's website, mobile version"> 
               </div>
-              <div>
-                <h4>Under the Sea</h4>
-                <p class="toolsDescription">HTML5, CSS, Javascript</p>
-                <a href="https://github.com/paulavivasteixeira/under-the-sea">
-                  <p>GitHub Repo</p>
-                </a>
-                <a href="">
-                  <p>Live Site</p>
-                </a>
+              <div class="projectContainerLocal">
+                <div>
+                  <h4>Project: Under the Sea</h4>
+                  <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i></p>
+                  <a class="projectLinkStyle" href="https://github.com/paulavivasteixeira/under-the-sea">GitHub Repo</a>
+                  <a class="projectLinkStyle" href="https://under-the-sea-paula.netlify.app/">Live Site</a>
+                </div>
               </div>
             </div>
-            
+              
             <div class="project3">
               <div class="projectImg">
-                <img src="" alt=""> 
+                <img src="./assets/queenquote.png" alt="screenshot of the Queen Quotes Quiz's website, tablet version"> 
               </div>
-              <div>
-                <h4>Queen's Quote</h4>
-                <p class="toolsDescription">HTML5, CSS, Javascript | Pair Programming</p>
-                <a href="https://github.com/junoProjectTwo/queenQuotes">
-                  <p>GitHub Repo</p>
-                </a>
-                <a href="https://sage-kulfi-94e866.netlify.app/">
-                  <p>Live Site</p>
-                </a>
+              <div class="projectContainerLocal">
+                <div>
+                  <h4> Project: Queen's Quote</h4>
+                  <p class="toolsDescription">Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i></p>
+                  <a class="projectLinkStyle" href="https://github.com/junoProjectTwo/queenQuotes">GitHub Repo</a>
+                  <a  class="projectLinkStyle" href="https://queenquotes.netlify.app/">Live Site</a>
+                </div>
               </div>
             </div>
-            
+              
             <div class="project4">
               <div class="projectImg">
-                <img src="" alt=""> 
+                <i class="fa-solid fa-bars-progress"></i>
               </div>
-              <div>
-                <h4>Coming soon</h4>
-                <p class="toolsDescription">HTML5, CSS, Javascript, React</p>
-                <a href="">
-                  <p>GitHub Repo</p>
-                </a>
-                <a href="">
-                  <p>Live Site</p>
-                </a>
-              </div>
-            </div>  
-            
+              <div class="projectContainerLocal">
+                <div>
+                  <h4> Project: In progress</h4>
+                  <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i><i class="fa-brands fa-react"></i></p>
+                  <a class="projectLinkStyle" href="#">GitHub Repo</a>
+                  <a class="projectLinkStyle" href="#">Live Site</a>
+                </div>
+              </div>  
+            </div>
+              
           </div>
+        </div>
+
+        <div class="buttonDown3">
+          <a class="buttonStyle" href="#contact" aria-label="go to Contact section."><i class="fa-solid fa-angle-down"></i></a>
         </div>
       </section>
       
+      <!-- Contact Session starts here -->
       <section class="contact" id="contact">
         <div class="wrapper"> 
-          
           <div class="contactHeader">
             <h3>Contact</h3>
           </div>
-          
-          
+                    
           <fieldset>              
             <div class="emailHeader">
               <i class="fa-solid fa-envelope" aria-label="send an email to Paula."></i>
@@ -275,5 +285,7 @@
       </div>
     </footer>
     <!-- Footer Section ends here -->
+
+    <script src="./app.js"></script>
   </body>
 </html>
