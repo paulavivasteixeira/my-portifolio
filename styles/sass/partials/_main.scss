@@ -76,7 +76,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
-  width: 100%;
+  width: 74%;
   min-height: 28vh;
   gap: 1.2rem;
   div {
@@ -100,9 +100,17 @@
   }
 }
 
-.restApi {
-  width:70px;
+.material-symbols-outlined {
   color: $darkColor;
+  font-size: larger;
+  font-variation-settings:
+  'FILL' ,
+  'wght' 850,
+  'GRAD' 0,
+  'opsz' 48;
+  &:hover {
+    color: $lightPink;
+  }
 }
 
 .buttonDown2 {
