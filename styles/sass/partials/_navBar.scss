@@ -18,11 +18,12 @@
     a {
       color: $darkColor;
       cursor: pointer;
-      padding: 12px 30px;
+      padding: 10px 30px;
       &:hover {
         transition: 0.2s;          
-        background-color: #4d675326;
-        border-radius: 3px;
+        // background-color: #4d67530d;
+        // border-radius: 3px;
+        border-bottom: 2px solid $darkColor;
       }
       &:focus {
         border: 2px solid $white;

@@ -872,12 +872,11 @@ footer {
 .navMenu a {
   color: #20413A;
   cursor: pointer;
-  padding: 12px 30px;
+  padding: 10px 30px;
 }
 .navMenu a:hover {
   transition: 0.2s;
-  background-color: rgba(77, 103, 83, 0.1490196078);
-  border-radius: 3px;
+  border-bottom: 2px solid #20413A;
 }
 .navMenu a:focus {
   border: 2px solid #fff;
