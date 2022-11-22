@@ -4,65 +4,73 @@
 
 // Lora Regular
 @font-face {
-    font-family: 'Lora Regular';
-    src: url('../../fonts/Lora/static/Lora-Regular.ttf')
+  font-family: "Lora Regular";
+  src: url("../../fonts/Lora/static/Lora-Regular.ttf");
 }
 
 // Lora Italic
 @font-face {
-    font-family: 'Lora Italic';
-    src: url('../../fonts/Lora/static/Lora-Italic.ttf')
+  font-family: "Lora Italic";
+  src: url("../../fonts/Lora/static/Lora-Italic.ttf");
 }
 
 // Roboto Bold
 @font-face {
-    font-family: 'Roboto Bold';
-    src: url(../../fonts/Roboto/Roboto-Bold.ttf);
+  font-family: "Roboto Bold";
+  src: url(../../fonts/Roboto/Roboto-Bold.ttf);
 }
 
+
+// Aboreto
+@font-face {
+  font-family: 'Aboreto';
+  src: url(../../fonts/Aboreto/Aboreto-Regular.ttf)
+}
 // --------------------------
 html {
-    font-size: 125%;
+  font-size: 125%;
 }
 
-
 h1 {
-    font-family: $bodyFont;
-    color: $darkColor;
-    font-size: clamp(5rem, 8vw, 8rem);
-    display: flex;
-    flex-direction: column;
-    
+  font-family: 'Aboreto';
+  color: $darkColor;
+  font-size: clamp(5rem, 4.1256rem + 4.3049vw, 8rem);
+  margin: 0;
+  padding-top: 5rem;
 }
 
 h2 {
-    font-family: 'Roboto';
-    font-size: clamp(2.1rem, 4vw, 3.5rem);
-    color: $lightPink;
-    width: 80%;
-
+  font-family: 'Aboreto';
+  font-size: clamp(2.3rem, 1.9502rem + 1.722vw, 3.5rem);
+  margin-top: 0;
+  color: $darkColor;
 }
 
 h3 {
-    font-family: $bodyFont;
-    font-size: clamp(1.6rem, 3vw, 3rem);
-    color: $darkColor;
-    text-align: center;
+  font-family: 'Aboreto';
+  font-size: clamp(1.6rem, 1.1919rem + 2.009vw, 3rem);
+  color: $darkColor;
+  text-align: center;
 }
 
 h4 {
-    font-family: 'Roboto Bold';
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
-    color: $darkColor;
+  font-family: 'Aboreto';
+  font-size: clamp(1.2rem, 0.9668rem + 1.148vw, 2rem);
+  color: $darkColor;
+  line-height:clamp(1.2rem, 0.9668rem + 1.148vw, 2rem);
+  margin: 0;
+  padding-top: 1rem;
 }
 
 article,
-legend,
 label,
 p,
 a {
-    font-family: $bodyFont;
-    font-size: clamp(1rem, 1vw, 1.2rem);
-    line-height: 1.5rem;
+  font-family: $bodyFont;
+  font-size: clamp(1rem, 0.9417rem + 0.287vw, 1.2rem);
+  line-height: clamp(1.3rem, 1.0668rem + 1.148vw, 2.1rem);
+}
 
+legend {
+  font-family: 'Lora Italic';
 }

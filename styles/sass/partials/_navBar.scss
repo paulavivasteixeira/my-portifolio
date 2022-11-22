@@ -10,19 +10,12 @@
     align-items: center;
     width: 30vw;
     margin-right: 15vw;
-    li {
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
     a {
       color: $darkColor;
       cursor: pointer;
       padding: 10px 30px;
       &:hover {
         transition: 0.2s;          
-        // background-color: #4d67530d;
-        // border-radius: 3px;
         border-bottom: 2px solid $darkColor;
       }
       &:focus {
@@ -32,7 +25,6 @@
       }
     }
 }
-
 
 .navToggler {
     border: 3px solid $darkColor;

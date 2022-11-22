@@ -28,17 +28,6 @@ i {
   font-size: 2.5rem;
 }
 
-.fa-angle-down {
-  width: 60px;
-  height: 60px;
-  border-radius: 40px;
-  border: 2px solid $lightPink;
-  text-align: center;
-  padding-top: 2px;
-  background-color: $lightPink;
-  box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495)
-}
-
 .buttonStyle {
   position: absolute;
   animation: bounce 0.5s infinite;
@@ -54,13 +43,13 @@ i {
 
 .fa-angles-up {
   position: absolute;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   right: 5vw;
   bottom: 5vh;
   margin: 0 auto;
-  width: 60px;
-  height: 60px;
-  border-radius: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
   border: 2px solid $lightPink;
   text-align: center;
   padding-top: 10px;

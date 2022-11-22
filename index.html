@@ -32,32 +32,56 @@
         </div>
           
         <nav class="navBar">
-          
           <button class="navToggler" arial-label="menu expand"><span></span></button>
 
           <ul class="navMenu wrapper">
-            <li class="navItem"><a href="#home" aria-label="go to home section.">Home</a></li>
-            <li class="navItem"><a href="#about" aria-label="go to about section.">About</a></li>
-            <li class="navItem"><a href="#projects" aria-label="go to projects section.">Projects</a></li>
-            <li class="navItem"><a href="#contact" aria-label="go to contact section.">Contact</a></li>
+            <li class="navItem">
+              <a href="#home" aria-label="go to home section.">Home</a>
+            </li>
+            <li class="navItem">
+              <a href="#about" aria-label="go to about section.">About</a>
+            </li>
+            <li class="navItem">
+              <a href="#projects" aria-label="go to projects section.">Projects</a>
+            </li>
+            <li class="navItem">
+              <a href="#contact" aria-label="go to contact section.">Contact</a>
+            </li>
           </ul>
 
         </nav>
       </section> 
 
-      <section class="paulaHeader tracking-in-expand">
-        <h1>
-          <span class="name">Paula</span>
-          <span class="lastName">Vivas Teixeira</span>
-        </h1>
-        <h2 class="title"><>Front-End Developer</h2>
-        </section>
+      <section class="paulaHeader wrapper">
+        <div class="paulaContainer">
+          <h1 class="name">Paula</h1>
+          <h2 class="title">Front-End Developer</h2>
+        </div>
 
-      <div class="buttonDown1">
-        <a class="buttonStyle btnStyleHeader" href="#about" aria-label="go to About section."><i class="fa-solid fa-angle-down"></i></a>
+        <div class="flower">
+          <img src="./assets/calathea.png" alt="screenshot of Arora's website"> 
+        </div>  
+      </section>
+      
+      <div class="contactContainer">
+        <div class="contactHover">
+          <ul>
+            <li class="socialMediasLinks">
+              <a href="www.linkedin.com/in/paulavivasteixeira" aria-label="go to Paula's LinkedIn Page."><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>      
+            <li class="socialMediasLinks">
+              <a href="https://github.com/paulavivasteixeira" aria-label="go to Paula's GitHub Page."><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      
+      <div class="buttonDown1">
+        <a class="buttonStyle btnStyleHeader" href="#about" aria-label="go to About section."><i class="fa-solid fa-angle-down downTop"></i></a>
+      </div>
+
+    </div>
+
     </header>
     <!-- Header Section ends here -->
     
@@ -69,16 +93,16 @@
         <h3>Hi, I'm Paula</h3>
         <div class="aboutContainer">
           <div class="profileImg">
-            <img src="./assets/cartoon1.jpeg" alt="Paula's headshot. Paula has light skin, dark brown hair and eyes. She is wearing a black shirts and blazer, and a red lipstick" />
+            <img src="./assets/cartoon1.png" alt="Paula's headshot. Paula has light skin, dark brown hair and eyes. She is wearing a black shirts and blazer, and a red lipstick" />
           </div>
           <div class="aboutMeText">
-            <p>I am a Front-End developer graduated at <a href="https://junocollege.com/">Juno College of Technology</a>. I also have a degree in Public Relations and  14 years of experience in event planning for foundations and public sector.</p>
+            <p>A Front-End developer graduated at <a href="https://junocollege.com/">Juno College of Technology</a>. I also have a degree in Public Relations and  14 years of experience in event planning for for-non-profit organizations and public institutions.</p>
             <p> I bring to web development my organization, communications and problem-solving skills. All my projects are focused on creating inclusive experiences.</p>
             </div>
         </div>
 
         <div class="buttonDown4">
-          <a class="buttonStyle btnStyleHeader" href="#skills" aria-label="go to skills section."><i class="fa-solid fa-angle-down"></i></a>
+          <a class="buttonStyle btnStyleHeader" href="#skills" aria-label="go to skills section."><i class="fa-solid fa-angle-down downMain"></i></a>
         </div>
       </section>
       
@@ -144,11 +168,6 @@
             
           </div>
         </div>
-
-        <div class="buttonDown2">
-          <a class="buttonStyle" href="#projects" aria-label="go to About section."><i class="fa-solid fa-angle-down"></i></a>
-        </div>
-
       </section>
       
       <!-- Projects Session starts here -->
@@ -166,7 +185,7 @@
               </div>
               <div class="projectContainerLocal">
                 <div>
-                  <h4>Project: Arora</h4>
+                  <h4>Arora</h4>
                   <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></p>
                   <a class="projectLinkStyle" href="https://github.com/paulavivasteixeira/Arora">GitHub Repo</a>
                   <a class="projectLinkStyle" href="https://sage-kulfi-94e866.netlify.app">Live Site</a>
@@ -176,11 +195,11 @@
             
             <div class="project2">
               <div class="projectImg">
-                <img src="./assets/underTheSea.png" alt="screenshot of the Under the Sea's website, mobile version"> 
+                <img src="./assets/underTheSea.png" alt="screenshot of the Under the Sea's website"> 
               </div>
               <div class="projectContainerLocal">
                 <div>
-                  <h4>Project: Under the Sea</h4>
+                  <h4>Under the Sea</h4>
                   <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i></p>
                   <a class="projectLinkStyle" href="https://github.com/paulavivasteixeira/under-the-sea">GitHub Repo</a>
                   <a class="projectLinkStyle" href="https://under-the-sea-paula.netlify.app/">Live Site</a>
@@ -190,11 +209,11 @@
               
             <div class="project3">
               <div class="projectImg">
-                <img src="./assets/queenquote.png" alt="screenshot of the Queen Quotes Quiz's website, tablet version"> 
+                <img src="./assets/queenquote.png" alt="screenshot of the Queen Quotes Quiz's website"> 
               </div>
               <div class="projectContainerLocal">
                 <div>
-                  <h4> Project: Queen's Quote</h4>
+                  <h4>Queen's Quote</h4>
                   <p class="toolsDescription">Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i></p>
                   <a class="projectLinkStyle" href="https://github.com/junoProjectTwo/queenQuotes">GitHub Repo</a>
                   <a  class="projectLinkStyle" href="https://queenquotes.netlify.app/">Live Site</a>
@@ -204,29 +223,25 @@
               
             <div class="project4">
               <div class="projectImg">
-                <i class="fa-solid fa-bars-progress"></i>
+                <img src="./assets/pokemonDetective.jpg" alt="screenshot of the Pokemon Detective's website"> 
               </div>
               <div class="projectContainerLocal">
                 <div>
-                  <h4> Project: In progress</h4>
+                  <h4>Pokemon Detective</h4> 
                   <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i><i class="fa-brands fa-react"></i></p>
-                  <a class="projectLinkStyle" href="#">GitHub Repo</a>
+                  <a class="projectLinkStyle" href="https://github.com/Detective-Pokemon-44">GitHub Repo</a>
                   <a class="projectLinkStyle" href="#">Live Site</a>
                 </div>
               </div>  
-            </div>
-              
+            </div>       
           </div>
         </div>
 
-        <div class="buttonDown3">
-          <a class="buttonStyle" href="#contact" aria-label="go to Contact section."><i class="fa-solid fa-angle-down"></i></a>
-        </div>
       </section>
       
       <!-- Contact Session starts here -->
       <section class="contact" id="contact">
-        <div class="wrapper"> 
+        <div class="contactWrapper wrapper"> 
           <div class="contactHeader">
             <h3>Contact</h3>
           </div>
@@ -256,20 +271,6 @@
               </div>
             </form>
           </fieldset>
-          
-          <div class="contactContainer">
-            <div class="contactHover">
-              <div>
-                <a href="www.linkedin.com/in/paulavivasteixeira" aria-label="go to Paula's LinkedIn Page."><i class="fa-brands fa-linkedin-in"></i></a>
-                <p class="contactPHover">Linked In</p>
-              </div>          
-              <div>
-                <a href="https://github.com/paulavivasteixeira" aria-label="go to Paula's GitHub Page."><i class="fa-brands fa-github"></i></a>
-                <p class="contactPHover">GitHub</p>
-              </div>
-            </div>
-          </div>
-        </div>
         
         <div class="top wrapper">
           <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
