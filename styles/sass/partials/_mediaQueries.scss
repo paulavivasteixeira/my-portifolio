@@ -3,38 +3,76 @@
 /* 1400px screen-size devices and smaller */
 @media (max-width: 1400px) {
     .wrapper {
-        width: 86%;
+        width: 80%;
     }
 }
 
 
-/* 1200px screen-size devices and smaller */
-@media (max-width: 1200px) {
+/* 1000px screen-size devices and smaller */
+@media (max-width: 1000px) {
 
-    .paulaHeader {
-        padding-left: 15%;
+    .wrapper {
+        width: 85%;
     }
 
-   .title {
-        margin-left: 0;
-        max-width: 80%;
-        &::after {
-            font-size: 2rem;
-        }
-    }
-
-
-    .aboutContainer {
-        flex-direction: column;
+    .paulaContainer {
+        width: 90vw;
+        height: 70%;
         justify-content: center;
         align-items: center;
-        .profileImg {
-            height: auto;
+        h1 {
+            padding-top: 0;
+        }
+    }
+    .flower {
+        height: 20vh;
+        bottom: 1%;
+        right: 41%;
+        transform: scaleX(-1);
+        opacity: 1;
+    }
+
+    @keyframes falling {
+        0% {
+          transform: translate3d(15rem, -2rem, -4rem) rotate(20deg) scaleX(-1);
+          opacity: 0;
+        }
+      
+        100% {
+          transform: translate3d(0, 0, 0) rotate(0deg), scaleX(-1);
+        }
+      }
+
+    .socialMediasLinks {
+        padding: 0.5rem;
+    }
+
+    .buttonDown1 {
+        height: 10vh;
+        padding-left: 31vw;
+    }
+
+    .aboutContainer {
+        gap: 1rem;
+    }
+
+    .profileImg {
+        width: 30%;
+        img {
+           height: 100%;
         }
     }
 
-    .buttonDown4 {
-        display: block;
+    .aboutMeText {
+        width: 70%;
+    }
+
+    .skillsContainer {
+        width: 90%;
+        div {
+            width: 170px;
+            height: 170px;  
+        }
     }
 
     .projectsContainer {
@@ -48,50 +86,80 @@
         flex-direction: column;
     }
 
+    .contact {
+        padding-bottom: 1rem;
+    }
+
+    .fieldset {
+        padding: 1rem;
+    }
+
+    .emailMe {
+        padding-top: 10px;
+    }
+
+    form {
+        width: 615px;
+    }
+
+    .fa-angles-up P{
+        right: 9vw;
+    }
+
 }
 
-
 /* 800px screen-size devices and smaller */
-@media (max-width: 800px) {
+@media (max-width: 840px) {
+
     .wrapper {
         width: 90%;
     }
-      
-    .paulaHeader {
-        padding-left: 10%;
-    }
 
     .title {
-        margin-left: 0;
-        max-width: 85%;
-        &::after {
-            font-size: 2.2rem;        
-        }
+        text-align: center;
     }
     
-    .aboutMeText {
-        width: 125%;
+    .aboutContainer {
+        flex-direction: column;
     }
 
-    .buttonDown2,
-    .buttonDown4 {
-        bottom: 1.5rem;
+    .aboutMeText {
+        width: 100%;
     }
-    
+
+    .profileImg {
+        height: 250px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+
+    }
+
     .skillsContainer {
-        gap: 1rem;
+        gap: 0.5rem;
+        div {
+            width: 155px;
+            height: 155px;
+        }
+        i {
+            font-size: 1.5rem;
+        }
       }
      
-    .emailHeader {
-        width: 90%;
-        justify-content: flex-start;
+    .contactContainer {
+        position: absolute;
+
+    }
+
+    .contact {
+        min-height: 90vh;
     }
 
     fieldset { 
-        padding: 2rem 0;
+        width: 94%;
         margin: 0 auto;
         div {
-            width: 95%;
+            width: 100%;
         }
     }
 
@@ -105,35 +173,16 @@
         label,
         input,
         textarea {
-            max-width: 350px;
+            display: inline-block;
+            max-width: 400px;
             width:100%;
         }
-    }
-
-    .fa-angle-down {
-        width: 50px;
-        height: 50px;
-    }
-
-    i {
-        font-size: 2rem;
-    }
-
-    .fa-angles-up {
-        font-size: 1.3rem;
-        width: 50px;
-        height: 50px;
-        bottom: 3vh;
-    }
-
-    .contactContainer {
-        width: 90%;
     }
 }
 
 
-/* 400px screen-size devices and smaller */
-@media (max-width: 400px) {
+/* 420px screen-size devices and smaller */
+@media (max-width: 420px) {
     .wrapper {
         width: 94%;
     }
@@ -146,8 +195,8 @@
         }
     }
     
-    .fa-bars-progress {
-        font-size: 10rem;
+    .aboutMeText {
+        padding: 0 0.8rem;
     }
 
     .emailHeader {
@@ -155,12 +204,13 @@
         padding-left: 20px;
     }
 
+    .contactHeader {
+        padding-bottom: 3rem;
+    }
+
     fieldset { 
-        width: 90%;
-        left: 25px;
-        div {
-            width: 90%;
-        }
+        width: 85%;
+        padding: 0.8rem;
     }
 
     form {
@@ -172,6 +222,16 @@
         input,
         textarea {
             width: 300px;
+        }
+    }
+
+    .contactContainer {
+        position: absolute;
+        bottom: -444vh;
+        left: 40%;
+        ul {
+            display: flex;
+            flex-direction: row;
         }
     }
 

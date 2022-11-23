@@ -20,25 +20,31 @@
   flex-direction: row;
   min-height: 5vh;
   border-radius: 3px;
+  padding-top: 2rem;
+  gap: 2rem;
 }
 
 .profileImg {
-  align-items: center;
-  height: 300px;
+  display: flex;
+  height: 280px;
+  width: 20vw;
+  padding-top: 25px;
   img {
     border-radius: 18px;
     box-shadow: 2px 2px 15px $lightColor, -2px -2px 15px $lightPink;
     background-color: $lightPink;
-    height: 100%;
   }
 }
 
 .aboutMeText {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   padding: 0 2.5rem;
+  width: 80vw;
   p {
     text-align: justify;
+    margin-top: 0;
   }
 }
 
@@ -85,7 +91,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 104%;
+  max-width: 1200px;
   min-height: 28vh;
   padding: 2rem 0;
   gap: 1rem;
@@ -117,7 +124,7 @@
 .material-symbols-outlined {
   color: $darkColor;
   font-size: larger;
-  font-variation-settings: "FILL", "wght" 850, "GRAD" 0, "opsz" 48;
+  // font-variation-settings: "FILL", "wght" 850, "GRAD" 0, "opsz" 48;
   &:hover {
     color: $lightPink;
   }
@@ -302,4 +309,26 @@ textarea {
 textarea {
   height: 135px;
   resize: none;
+}
+
+.fa-angles-up {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 8vw;
+  bottom: 2vh;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid $lightPink;
+  text-align: center;
+  padding-top: 10px;
+  background-color: $lightPink;
+  color: $white;
+  box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
+  transition: 0.3s;
+  &:hover {
+    transform: scale(90%);
+    box-shadow: 4px 4px 4px 4px rgba(134, 132, 132, 0.495);
+  }
 }

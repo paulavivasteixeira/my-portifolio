@@ -69,14 +69,15 @@ header {
 }
 
 .title {
-padding-left: 10px;
-  }
-  
+  padding-left: 10px;
+  z-index: 3;
+}
+
 .flower {
-  height: 40vh;
+  height: 34vh;
   position: absolute;
-  bottom: 5%;
-  right: 15%;
+  bottom: 11%;
+  right: 4%;
   animation: 2s ease-in 1 falling;
   img {
     width: 100%;
@@ -84,25 +85,25 @@ padding-left: 10px;
     object-fit: contain;
   }
 }
-  
+
 @keyframes falling {
   0% {
     transform: translate3d(5rem, -2rem, -4rem) rotate(20deg);
     opacity: 0;
   }
-  
+
   100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);;
+    transform: translate3d(0, 0, 0) rotate(0deg);
   }
 }
-  
+
 .contactContainer {
   position: fixed;
-  right: 15px;
-  bottom: 40vh;
+  left: 15px;
+  bottom: 18vh;
   z-index: 15;
 }
-  
+
 .contactHover {
   display: flex;
   gap: 1.5rem;
@@ -114,7 +115,7 @@ padding-left: 10px;
 }
 
 .socialMediasLinks {
-  padding: 1rem;
+  padding: 0.8rem;
   transition: 0.5s;
   a {
     color: $darkColor;
@@ -141,18 +142,18 @@ padding-left: 10px;
 }
 
 .buttonDown1 {
-position: absolute;
-height: 5vh;
-padding-left: 5vw;
-bottom: 4rem;
-display: block;
+  position: absolute;
+  height: 5vh;
+  padding-left: 5vw;
+  bottom: 4rem;
+  display: block;
   i {
-  border-radius: 40px;
-  border: 2px solid $lightPink;
-  text-align: center;
-  padding-top: 2px;
-  background-color: $lightPink;
-  font-size: 2.5rem;
-  box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
+    border-radius: 40px;
+    border: 2px solid $lightPink;
+    text-align: center;
+    padding-top: 2px;
+    background-color: $lightPink;
+    font-size: 2.5rem;
+    box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
   }
 }

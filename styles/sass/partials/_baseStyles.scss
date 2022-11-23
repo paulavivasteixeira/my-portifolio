@@ -41,26 +41,5 @@ i {
   }
 }
 
-.fa-angles-up {
-  position: absolute;
-  font-size: 1.3rem;
-  right: 5vw;
-  bottom: 5vh;
-  margin: 0 auto;
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  border: 2px solid $lightPink;
-  text-align: center;
-  padding-top: 10px;
-  background-color: $lightPink;
-  color: $white;
-  box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
-  transition: 0.3s;
-  &:hover {
-    transform: scale(90%);
-    box-shadow: 4px 4px 4px 4px rgba(134, 132, 132, 0.495);
-  }
-}
 
 
