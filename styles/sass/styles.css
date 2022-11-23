@@ -243,7 +243,7 @@ html {
 
 h1 {
   font-family: "Aboreto";
-  color: #20413A;
+  color: #e8cba9;
   font-size: clamp(5rem, 4.1256rem + 4.3049vw, 8rem);
   margin: 0;
   padding-top: 5rem;
@@ -253,20 +253,20 @@ h2 {
   font-family: "Aboreto";
   font-size: clamp(2.3rem, 1.9502rem + 1.722vw, 3.5rem);
   margin-top: 0;
-  color: #20413A;
+  color: #e8cba9;
 }
 
 h3 {
   font-family: "Aboreto";
   font-size: clamp(1.6rem, 1.1919rem + 2.009vw, 3rem);
-  color: #20413A;
+  color: #e8cba9;
   text-align: center;
 }
 
 h4 {
   font-family: "Aboreto";
   font-size: clamp(1.2rem, 0.996rem + 1.0045vw, 1.9rem);
-  color: #20413A;
+  color: #e8cba9;
   line-height: clamp(1.2rem, 0.996rem + 1.0045vw, 1.9rem);
   margin: 0;
   padding-top: 1.5rem;
@@ -279,6 +279,7 @@ a {
   font-family: "Lora Regular";
   font-size: clamp(1rem, 0.9417rem + 0.287vw, 1.2rem);
   line-height: clamp(1.3rem, 1.0668rem + 1.148vw, 2.1rem);
+  color: #8c9173;
 }
 
 legend {
@@ -305,7 +306,7 @@ a:hover {
   outline: none;
 }
 a:focus {
-  outline: 2px solid #f1cddf;
+  outline: 2px solid #8c9173;
   padding: 1%;
 }
 
@@ -336,7 +337,7 @@ i {
 }
 header {
   height: 100vh;
-  background: rgba(186, 194, 171, 0.2862745098);
+  background: #192d08;
   width: 100%;
   margin: 0 auto;
   color: #fff;
@@ -356,7 +357,7 @@ header a {
   padding: 5px;
 }
 .skipToMain a:hover, .skipToMain a:focus {
-  color: #20413A;
+  color: #e8cba9;
   border: 1px solid #BaC2AB;
 }
 
@@ -466,9 +467,8 @@ header a {
   gap: 1.5rem;
 }
 .contactHover i {
-  color: #20413A;
+  color: #e8cba9;
   font-size: 1.8rem;
-  text-shadow: 5px 5px 5px rgb(172, 171, 171);
 }
 
 .socialMediasLinks {
@@ -476,15 +476,14 @@ header a {
   transition: 0.5s;
 }
 .socialMediasLinks a {
-  color: #20413A;
+  color: #e8cba9;
 }
 .socialMediasLinks:hover, .socialMediasLinks:focus {
-  background-color: #20413A;
+  background-color: #e8cba9;
   border-radius: 3px;
 }
 .socialMediasLinks:hover i, .socialMediasLinks:focus i {
-  color: #f1cddf;
-  text-shadow: 5px 5px 5px rgb(85, 86, 86);
+  color: #8c9173;
 }
 
 .downTop {
@@ -506,16 +505,16 @@ header a {
 }
 .buttonDown1 i {
   border-radius: 40px;
-  border: 2px solid #f1cddf;
+  border: 2px solid #8c9173;
   text-align: center;
   padding-top: 2px;
-  background-color: #f1cddf;
+  background-color: #8c9173;
   font-size: 2.5rem;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
 }
 
 .mainSection {
-  background: rgba(186, 194, 171, 0.2862745098);
+  background: #192d08;
 }
 
 .aboutMe {
@@ -545,8 +544,8 @@ header a {
 }
 .profileImg img {
   border-radius: 18px;
-  box-shadow: 2px 2px 15px #BaC2AB, -2px -2px 15px #f1cddf;
-  background-color: #f1cddf;
+  background: rgb(140, 145, 115);
+  background: radial-gradient(circle, rgb(140, 145, 115) 0%, rgb(25, 45, 8) 57%);
 }
 
 .aboutMeText {
@@ -574,8 +573,8 @@ header a {
   width: 35px;
   height: 35px;
   border-radius: 40px;
-  background-color: #f1cddf;
-  border: 2px solid #f1cddf;
+  background-color: #8c9173;
+  border: 2px solid #8c9173;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
   padding-top: 2px;
   bottom: 1rem;
@@ -617,13 +616,12 @@ header a {
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #20413A;
-  box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+  color: #e8cba9;
   transition: 0.3s;
 }
 .skillsContainer div:hover, .skillsContainer div:focus {
-  color: #f1cddf;
-  background-color: #20413A;
+  color: #8c9173;
+  background-color: #e8cba9;
   border-radius: 3px;
   box-shadow: inset 0 0 0.6em 0 rgba(249, 250, 248, 0.3490196078), 0 0 0.6em 0 rgba(249, 250, 248, 0.3490196078);
 }
@@ -632,11 +630,11 @@ header a {
 }
 
 .material-symbols-outlined {
-  color: #20413A;
+  color: #e8cba9;
   font-size: 43px;
 }
 .material-symbols-outlined:hover {
-  color: #f1cddf;
+  color: #8c9173;
 }
 
 .projects {
@@ -664,7 +662,6 @@ header a {
   align-items: center;
   margin: 0 auto;
   padding-bottom: 1.5rem;
-  box-shadow: 5px 5px 10px white, -8px -8px 10px white;
 }
 .projectsContainer .projectContainerLocal {
   padding: 0px 20px;
@@ -680,7 +677,6 @@ header a {
   height: 190px;
   display: flex;
   margin-top: 20px;
-  box-shadow: 3px 3px 10px #fff, -3px -3px 10px #fff;
 }
 .projectImg img {
   -o-object-fit: cover;
@@ -690,7 +686,7 @@ header a {
 
 .toolsDescription {
   font-family: "Lora Regular";
-  color: #20413A;
+  color: #e8cba9;
 }
 .toolsDescription i {
   font-size: 1.5rem;
@@ -698,16 +694,16 @@ header a {
 
 .projectLinkStyle {
   font-family: "Lora Regular";
-  color: #20413A;
+  color: #e8cba9;
   width: 140px;
   text-align: center;
   font-size: 1rem;
   padding: 5px 15px;
-  background-color: #f1cddf;
+  background-color: #8c9173;
 }
 .projectLinkStyle:hover, .projectLinkStyle:focus {
-  background-color: #20413A;
-  color: #f1cddf;
+  background-color: #e8cba9;
+  color: #8c9173;
 }
 
 .contact {
@@ -747,7 +743,7 @@ fieldset {
   border: none;
   border-radius: 3px;
   box-shadow: 0 4px 25px rgba(77, 103, 83, 0.4235294118);
-  color: #20413A;
+  color: #e8cba9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -768,7 +764,7 @@ form {
   justify-content: flex-start;
 }
 form button {
-  color: #20413A;
+  color: #e8cba9;
   width: 100%;
   font-family: "Lora Regular";
   background-color: rgba(247, 249, 248, 0.3647058824);
@@ -780,20 +776,20 @@ form button {
   transition: 0.3s;
 }
 form button:hover, form button:focus {
-  background-color: #f1cddf;
-  color: #20413A;
+  background-color: #8c9173;
+  color: #e8cba9;
   box-shadow: none;
 }
 
 label {
   text-align: center;
   padding: 5px;
-  color: #20413A;
+  color: #e8cba9;
 }
 
 input,
 textarea {
-  color: #20413A;
+  color: #e8cba9;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -810,7 +806,7 @@ textarea {
 input:hover, input:focus,
 textarea:hover,
 textarea:focus {
-  border: 1px solid #f1cddf;
+  border: 1px solid #8c9173;
   background-color: hsl(0deg, 79%, 99%);
 }
 
@@ -828,10 +824,10 @@ textarea {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  border: 2px solid #f1cddf;
+  border: 2px solid #8c9173;
   text-align: center;
   padding-top: 10px;
-  background-color: #f1cddf;
+  background-color: #8c9173;
   color: #fff;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
   transition: 0.3s;
@@ -842,7 +838,7 @@ textarea {
 }
 
 footer {
-  background-color: #f1cddf;
+  background-color: #8c9173;
 }
 
 .footerContainer {
@@ -850,10 +846,10 @@ footer {
   flex-direction: column;
   text-align: center;
   position: relative;
-  color: #20413A;
+  color: #e8cba9;
 }
 .footerContainer a {
-  color: #20413A;
+  color: #e8cba9;
   font-weight: bold;
 }
 
@@ -869,13 +865,13 @@ footer {
   margin-right: 15vw;
 }
 .navMenu a {
-  color: #20413A;
+  color: #e8cba9;
   cursor: pointer;
   padding: 10px 30px;
 }
 .navMenu a:hover {
   transition: 0.2s;
-  border-bottom: 2px solid #20413A;
+  border-bottom: 2px solid #e8cba9;
 }
 .navMenu a:focus {
   border: 2px solid #fff;
@@ -884,7 +880,7 @@ footer {
 }
 
 .navToggler {
-  border: 3px solid #20413A;
+  border: 3px solid #e8cba9;
   padding: 5px;
   height: 40px;
   cursor: pointer;
@@ -896,7 +892,7 @@ footer {
 .navToggler span:after {
   width: 30px;
   height: 3px;
-  background-color: #20413A;
+  background-color: #e8cba9;
   display: block;
   transition: 0.3s;
 }
@@ -1153,17 +1149,17 @@ form textarea {
     padding-top: 10px;
   }
   .navMenu .navItem:hover {
-    color: #f1cddf;
-    background-color: #20413A;
+    color: #8c9173;
+    background-color: #e8cba9;
     transition: 0.2s;
   }
   .navMenu .navItem a {
     padding: 12px 130px;
-    color: #20413A;
+    color: #e8cba9;
   }
   .navMenu .navItem a:hover {
-    color: #f1cddf;
-    background-color: #20413A;
+    color: #8c9173;
+    background-color: #e8cba9;
     transform: scale(1.5);
     border: none;
   }
