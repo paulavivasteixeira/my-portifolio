@@ -243,7 +243,7 @@ html {
 
 h1 {
   font-family: "Aboreto";
-  color: #e8cba9;
+  color: #20413A;
   font-size: clamp(5rem, 4.1256rem + 4.3049vw, 8rem);
   margin: 0;
   padding-top: 5rem;
@@ -253,20 +253,20 @@ h2 {
   font-family: "Aboreto";
   font-size: clamp(2.3rem, 1.9502rem + 1.722vw, 3.5rem);
   margin-top: 0;
-  color: #e8cba9;
+  color: #20413A;
 }
 
 h3 {
   font-family: "Aboreto";
   font-size: clamp(1.6rem, 1.1919rem + 2.009vw, 3rem);
-  color: #e8cba9;
+  color: #20413A;
   text-align: center;
 }
 
 h4 {
   font-family: "Aboreto";
   font-size: clamp(1.2rem, 0.996rem + 1.0045vw, 1.9rem);
-  color: #e8cba9;
+  color: #20413A;
   line-height: clamp(1.2rem, 0.996rem + 1.0045vw, 1.9rem);
   margin: 0;
   padding-top: 1.5rem;
@@ -279,7 +279,7 @@ a {
   font-family: "Lora Regular";
   font-size: clamp(1rem, 0.9417rem + 0.287vw, 1.2rem);
   line-height: clamp(1.3rem, 1.0668rem + 1.148vw, 2.1rem);
-  color: #8c9173;
+  color: #20413A;
 }
 
 legend {
@@ -300,13 +300,13 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #20413A;
 }
 a:hover {
   outline: none;
 }
 a:focus {
-  outline: 2px solid #8c9173;
+  outline: 2px solid #f1cddf;
   padding: 1%;
 }
 
@@ -337,7 +337,7 @@ i {
 }
 header {
   height: 100vh;
-  background: #192d08;
+  background: rgba(186, 194, 171, 0.2862745098);
   width: 100%;
   margin: 0 auto;
   color: #fff;
@@ -357,7 +357,7 @@ header a {
   padding: 5px;
 }
 .skipToMain a:hover, .skipToMain a:focus {
-  color: #e8cba9;
+  color: #20413A;
   border: 1px solid #BaC2AB;
 }
 
@@ -467,8 +467,9 @@ header a {
   gap: 1.5rem;
 }
 .contactHover i {
-  color: #e8cba9;
+  color: #20413A;
   font-size: 1.8rem;
+  text-shadow: 5px 5px 5px rgb(172, 171, 171);
 }
 
 .socialMediasLinks {
@@ -476,14 +477,15 @@ header a {
   transition: 0.5s;
 }
 .socialMediasLinks a {
-  color: #e8cba9;
+  color: #20413A;
 }
 .socialMediasLinks:hover, .socialMediasLinks:focus {
-  background-color: #e8cba9;
+  background-color: #20413A;
   border-radius: 3px;
 }
 .socialMediasLinks:hover i, .socialMediasLinks:focus i {
-  color: #8c9173;
+  color: #f1cddf;
+  text-shadow: 5px 5px 5px rgb(85, 86, 86);
 }
 
 .downTop {
@@ -505,55 +507,39 @@ header a {
 }
 .buttonDown1 i {
   border-radius: 40px;
-  border: 2px solid #8c9173;
+  border: 2px solid #f1cddf;
   text-align: center;
   padding-top: 2px;
-  background-color: #8c9173;
+  background-color: #f1cddf;
   font-size: 2.5rem;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
 }
 
-.mainSection {
-  background: #192d08;
-}
-
-.aboutMe {
-  min-height: 50vh;
-  padding: 2rem 0;
-  margin: 0 auto;
-  position: relative;
-}
-.aboutMe h3 {
-  margin: 0;
-}
-
 .aboutContainer {
   display: flex;
-  flex-direction: row;
   min-height: 5vh;
-  border-radius: 3px;
   padding-top: 2rem;
-  gap: 2rem;
+  gap: 1rem;
+  min-width: 1000px;
+  max-width: 1100px;
 }
 
 .profileImg {
-  display: flex;
-  height: 280px;
-  width: 20vw;
-  padding-top: 25px;
+  height: 100%;
+  width: 25vw;
 }
 .profileImg img {
-  border-radius: 18px;
-  background: rgb(140, 145, 115);
-  background: radial-gradient(circle, rgb(140, 145, 115) 0%, rgb(25, 45, 8) 57%);
+  height: 100%;
+  margin-top: -6rem;
+  margin-left: -5rem;
 }
 
 .aboutMeText {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 2.5rem;
-  width: 80vw;
+  padding: 0 1.5rem 0 1rem;
+  max-width: 55vw;
 }
 .aboutMeText p {
   text-align: justify;
@@ -573,8 +559,8 @@ header a {
   width: 35px;
   height: 35px;
   border-radius: 40px;
-  background-color: #8c9173;
-  border: 2px solid #8c9173;
+  background-color: #f1cddf;
+  border: 2px solid #f1cddf;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
   padding-top: 2px;
   bottom: 1rem;
@@ -601,27 +587,27 @@ header a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 104%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1000px;
   min-height: 28vh;
   padding: 2rem 0;
-  gap: 1rem;
+  gap: 0.1rem;
 }
 .skillsContainer div {
-  width: 190px;
-  height: 190px;
+  width: 180px;
+  height: 180px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #e8cba9;
+  color: #20413A;
+  padding-top: 15px;
   transition: 0.3s;
 }
 .skillsContainer div:hover, .skillsContainer div:focus {
-  color: #8c9173;
-  background-color: #e8cba9;
+  background-color: rgba(186, 194, 171, 0.2862745098);
   border-radius: 3px;
   box-shadow: inset 0 0 0.6em 0 rgba(249, 250, 248, 0.3490196078), 0 0 0.6em 0 rgba(249, 250, 248, 0.3490196078);
 }
@@ -631,10 +617,10 @@ header a {
 
 .material-symbols-outlined {
   color: #20413A;
+  font-size: 43px;
 }
-
 .material-symbols-outlined:hover {
-  color: #8c9173;
+  color: #f1cddf;
 }
 
 .projects {
@@ -662,6 +648,7 @@ header a {
   align-items: center;
   margin: 0 auto;
   padding-bottom: 1.5rem;
+  box-shadow: 5px 5px 10px white, -8px -8px 10px white;
 }
 .projectsContainer .projectContainerLocal {
   padding: 0px 20px;
@@ -686,7 +673,7 @@ header a {
 
 .toolsDescription {
   font-family: "Lora Regular";
-  color: #e8cba9;
+  color: #20413A;
 }
 .toolsDescription i {
   font-size: 1.5rem;
@@ -694,16 +681,16 @@ header a {
 
 .projectLinkStyle {
   font-family: "Lora Regular";
-  color: #e8cba9;
+  color: #20413A;
   width: 140px;
   text-align: center;
   font-size: 1rem;
   padding: 5px 15px;
-  background-color: #8c9173;
+  background-color: #f1cddf;
 }
 .projectLinkStyle:hover, .projectLinkStyle:focus {
-  background-color: #e8cba9;
-  color: #8c9173;
+  background-color: #20413A;
+  color: #f1cddf;
 }
 
 .contact {
@@ -743,7 +730,7 @@ fieldset {
   border: none;
   border-radius: 3px;
   box-shadow: 0 4px 25px rgba(77, 103, 83, 0.4235294118);
-  color: #e8cba9;
+  color: #20413A;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -764,7 +751,7 @@ form {
   justify-content: flex-start;
 }
 form button {
-  color: #e8cba9;
+  color: #20413A;
   width: 100%;
   font-family: "Lora Regular";
   background-color: rgba(247, 249, 248, 0.3647058824);
@@ -776,20 +763,20 @@ form button {
   transition: 0.3s;
 }
 form button:hover, form button:focus {
-  background-color: #8c9173;
-  color: #e8cba9;
+  background-color: #f1cddf;
+  color: #20413A;
   box-shadow: none;
 }
 
 label {
   text-align: center;
   padding: 5px;
-  color: #e8cba9;
+  color: #20413A;
 }
 
 input,
 textarea {
-  color: #e8cba9;
+  color: #20413A;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -806,7 +793,7 @@ textarea {
 input:hover, input:focus,
 textarea:hover,
 textarea:focus {
-  border: 1px solid #8c9173;
+  border: 1px solid #f1cddf;
   background-color: hsl(0deg, 79%, 99%);
 }
 
@@ -824,10 +811,10 @@ textarea {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  border: 2px solid #8c9173;
+  border: 2px solid #f1cddf;
   text-align: center;
   padding-top: 10px;
-  background-color: #8c9173;
+  background-color: #f1cddf;
   color: #fff;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
   transition: 0.3s;
@@ -838,7 +825,7 @@ textarea {
 }
 
 footer {
-  background-color: #8c9173;
+  background-color: rgba(186, 194, 171, 0.2862745098);
 }
 
 .footerContainer {
@@ -846,10 +833,10 @@ footer {
   flex-direction: column;
   text-align: center;
   position: relative;
-  color: #e8cba9;
+  color: #20413A;
 }
 .footerContainer a {
-  color: #e8cba9;
+  color: #20413A;
   font-weight: bold;
 }
 
@@ -865,13 +852,13 @@ footer {
   margin-right: 15vw;
 }
 .navMenu a {
-  color: #e8cba9;
+  color: #20413A;
   cursor: pointer;
   padding: 10px 30px;
 }
 .navMenu a:hover {
   transition: 0.2s;
-  border-bottom: 2px solid #e8cba9;
+  border-bottom: 2px solid #20413A;
 }
 .navMenu a:focus {
   border: 2px solid #fff;
@@ -880,7 +867,7 @@ footer {
 }
 
 .navToggler {
-  border: 3px solid #e8cba9;
+  border: 3px solid #20413A;
   padding: 5px;
   height: 40px;
   cursor: pointer;
@@ -892,7 +879,7 @@ footer {
 .navToggler span:after {
   width: 30px;
   height: 3px;
-  background-color: #e8cba9;
+  background-color: #20413A;
   display: block;
   transition: 0.3s;
 }
@@ -1013,15 +1000,26 @@ footer {
   }
   .aboutContainer {
     flex-direction: column;
+    min-width: 300px;
+    max-width: 820px;
+    padding-top: 1rem;
   }
   .aboutMeText {
     width: 100%;
   }
   .profileImg {
-    height: 250px;
+    height: 300px;
     width: 100%;
     justify-content: center;
     display: flex;
+  }
+  .profileImg img {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .aboutMeText {
+    padding: 1rem;
+    max-width: 85vw;
   }
   .skillsContainer {
     gap: 0.5rem;
@@ -1082,7 +1080,8 @@ form textarea {
     font-size: 1.6rem;
   }
   .aboutMeText {
-    padding: 0 0.8rem;
+    padding: 0 0 0 0.5rem;
+    max-width: 90vw;
   }
   .emailHeader {
     width: 95%;
@@ -1149,17 +1148,17 @@ form textarea {
     padding-top: 10px;
   }
   .navMenu .navItem:hover {
-    color: #8c9173;
-    background-color: #e8cba9;
+    color: #f1cddf;
+    background-color: #20413A;
     transition: 0.2s;
   }
   .navMenu .navItem a {
     padding: 12px 130px;
-    color: #e8cba9;
+    color: #20413A;
   }
   .navMenu .navItem a:hover {
-    color: #8c9173;
-    background-color: #e8cba9;
+    color: #f1cddf;
+    background-color: #20413A;
     transform: scale(1.5);
     border: none;
   }

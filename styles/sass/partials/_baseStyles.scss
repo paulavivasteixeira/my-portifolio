@@ -8,13 +8,13 @@
 
 ul {
   list-style: none;
-    padding: 0;
-    margin: 0 auto;
+  padding: 0;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: $darkColor;
   &:hover {
     outline: none;
   }
@@ -40,6 +40,3 @@ i {
     transform: translateY(2px);
   }
 }
-
-
-

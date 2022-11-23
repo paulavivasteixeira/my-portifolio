@@ -110,7 +110,7 @@ header {
   i {
     color: $darkColor;
     font-size: 1.8rem;
-    // text-shadow: 5px 5px 5px rgb(172, 171, 171);
+    text-shadow: 5px 5px 5px rgb(172, 171, 171);
   }
 }
 
@@ -126,7 +126,7 @@ header {
     border-radius: 3px;
     i {
       color: $lightPink;
-      // text-shadow: 5px 5px 5px rgb(85, 86, 86);
+      text-shadow: 5px 5px 5px rgb(85, 86, 86);
     }
   }
 }
@@ -157,3 +157,5 @@ header {
     box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
   }
 }
+
+
