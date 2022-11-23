@@ -69,6 +69,7 @@ a {
   font-family: $bodyFont;
   font-size: clamp(1rem, 0.9417rem + 0.287vw, 1.2rem);
   line-height: clamp(1.3rem, 1.0668rem + 1.148vw, 2.1rem);
+  color: $lightPink;
 }
 
 legend {

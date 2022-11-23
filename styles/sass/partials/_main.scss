@@ -31,8 +31,8 @@
   padding-top: 25px;
   img {
     border-radius: 18px;
-    box-shadow: 2px 2px 15px $lightColor, -2px -2px 15px $lightPink;
-    background-color: $lightPink;
+     background: rgb(140,145,115);
+background: radial-gradient(circle, rgba(140,145,115,1) 0%, rgba(25,45,8,1) 57%); 
   }
 }
 
@@ -106,7 +106,7 @@
     text-align: center;
     justify-content: center;
     color: $darkColor;
-    box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+    // box-shadow: 5px 5px 10px white, -5px -5px 10px white;
     transition: 0.3s;
     &:hover,
     &:focus {
@@ -155,7 +155,7 @@
     align-items: center;
     margin: 0 auto;
     padding-bottom: 1.5rem;
-    box-shadow: 5px 5px 10px white, -8px -8px 10px white;
+    // box-shadow: 5px 5px 10px white, -8px -8px 10px white;
   }
   .projectContainerLocal {
     padding: 0px 20px;
@@ -172,7 +172,7 @@
   height: 190px;
   display: flex;
   margin-top: 20px;
-  box-shadow: 3px 3px 10px $white, -3px -3px 10px $white;
+  // box-shadow: 3px 3px 10px $white, -3px -3px 10px $darkColor;
   img {
     object-fit: cover;
     width: 100%;
