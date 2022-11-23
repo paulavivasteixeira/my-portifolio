@@ -9,30 +9,27 @@
   min-height: 50vh;
   padding: 2rem 0;
   margin: 0 auto;
-  position: relative;
   h3 {
-    margin: 0;
+    margin: 1rem;
   }
 }
 
 .aboutContainer {
   display: flex;
-  flex-direction: row;
   min-height: 5vh;
-  border-radius: 3px;
   padding-top: 2rem;
-  gap: 2rem;
+  gap: 1rem;
+  min-width: 1000px;
+  max-width: 1100px;
 }
 
 .profileImg {
-  display: flex;
-  height: 280px;
-  width: 20vw;
-  padding-top: 25px;
+  height: 100%;
+  width: 25vw;
   img {
-    border-radius: 18px;
-    box-shadow: 2px 2px 15px $lightColor, -2px -2px 15px $lightPink;
-    background-color: $lightPink;
+    height: 100%;
+    margin-top: -6rem;
+    margin-left: -5rem;
   }
 }
 
@@ -40,8 +37,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 2.5rem;
-  width: 80vw;
+  padding: 0 1.5rem 0 1rem;
+  max-width: 55vw;
   p {
     text-align: justify;
     margin-top: 0;
@@ -97,8 +94,8 @@
   padding: 2rem 0;
   gap: 1rem;
   div {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -106,7 +103,7 @@
     text-align: center;
     justify-content: center;
     color: $darkColor;
-    box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+    padding-top: 15px;
     transition: 0.3s;
     &:hover,
     &:focus {
@@ -172,7 +169,6 @@
   height: 190px;
   display: flex;
   margin-top: 20px;
-  box-shadow: 3px 3px 10px $white, -3px -3px 10px $white;
   img {
     object-fit: cover;
     width: 100%;
