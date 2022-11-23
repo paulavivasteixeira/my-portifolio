@@ -2,237 +2,237 @@
 
 /* 1400px screen-size devices and smaller */
 @media (max-width: 1400px) {
-    .wrapper {
-        width: 80%;
-    }
+  .wrapper {
+    width: 80%;
+  }
 }
-
 
 /* 1000px screen-size devices and smaller */
 @media (max-width: 1000px) {
+  .wrapper {
+    width: 85%;
+  }
 
-    .wrapper {
-        width: 85%;
+  .paulaContainer {
+    width: 90vw;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      padding-top: 0;
+    }
+  }
+  .flower {
+    height: 20vh;
+    bottom: 1%;
+    right: 41%;
+    transform: scaleX(-1);
+    opacity: 1;
+  }
+
+  @keyframes falling {
+    0% {
+      transform: translate3d(15rem, -2rem, -4rem) rotate(20deg) scaleX(-1);
+      opacity: 0;
     }
 
-    .paulaContainer {
-        width: 90vw;
-        height: 70%;
-        justify-content: center;
-        align-items: center;
-        h1 {
-            padding-top: 0;
-        }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg), scaleX(-1);
     }
-    .flower {
-        height: 20vh;
-        bottom: 1%;
-        right: 41%;
-        transform: scaleX(-1);
-        opacity: 1;
+  }
+
+  .socialMediasLinks {
+    padding: 0.5rem;
+  }
+
+  .buttonDown1 {
+    height: 10vh;
+    padding-left: 31vw;
+  }
+
+  .aboutContainer {
+    gap: 1rem;
+  }
+
+  .profileImg {
+    width: 30%;
+    img {
+      height: 100%;
     }
+  }
 
-    @keyframes falling {
-        0% {
-          transform: translate3d(15rem, -2rem, -4rem) rotate(20deg) scaleX(-1);
-          opacity: 0;
-        }
-      
-        100% {
-          transform: translate3d(0, 0, 0) rotate(0deg), scaleX(-1);
-        }
-      }
+  .aboutMeText {
+    width: 70%;
+  }
 
-    .socialMediasLinks {
-        padding: 0.5rem;
+  .skillsContainer {
+    width: 90%;
+    div {
+      width: 170px;
+      height: 170px;
     }
+  }
 
-    .buttonDown1 {
-        height: 10vh;
-        padding-left: 31vw;
-    }
+  .projectsContainer {
+    gap: 1.5rem;
+  }
 
-    .aboutContainer {
-        gap: 1rem;
-    }
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    flex-direction: column;
+  }
 
-    .profileImg {
-        width: 30%;
-        img {
-           height: 100%;
-        }
-    }
+  .contact {
+    padding-bottom: 1rem;
+  }
 
-    .aboutMeText {
-        width: 70%;
-    }
+  .fieldset {
+    padding: 1rem;
+  }
 
-    .skillsContainer {
-        width: 90%;
-        div {
-            width: 170px;
-            height: 170px;  
-        }
-    }
+  .emailMe {
+    padding-top: 10px;
+  }
 
-    .projectsContainer {
-        gap: 1.5rem;
-    }
+  form {
+    width: 615px;
+  }
 
-    .project1,
-    .project2,
-    .project3,
-    .project4 {
-        flex-direction: column;
-    }
-
-    .contact {
-        padding-bottom: 1rem;
-    }
-
-    .fieldset {
-        padding: 1rem;
-    }
-
-    .emailMe {
-        padding-top: 10px;
-    }
-
-    form {
-        width: 615px;
-    }
-
-    .fa-angles-up P{
-        right: 9vw;
-    }
-
+  .fa-angles-up P {
+    right: 9vw;
+  }
 }
 
 /* 800px screen-size devices and smaller */
 @media (max-width: 840px) {
+  .wrapper {
+    width: 90%;
+  }
 
-    .wrapper {
-        width: 90%;
+  .title {
+    text-align: center;
+  }
+
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .aboutMeText {
+    width: 100%;
+  }
+
+  .profileImg {
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .skillsContainer {
+    gap: 0.5rem;
+    div {
+      width: 155px;
+      height: 155px;
     }
-
-    .title {
-        text-align: center;
+    i {
+      font-size: 1.5rem;
     }
-    
-    .aboutContainer {
-        flex-direction: column;
+  }
+
+  .contactContainer {
+    position: absolute;
+  }
+
+  .contact {
+    min-height: 80vh;
+  }
+
+  fieldset {
+    width: 94%;
+    margin: 0 auto;
+    div {
+      width: 100%;
     }
+  }
 
-    .aboutMeText {
-        width: 100%;
-    }
-
-    .profileImg {
-        height: 250px;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-
-    }
-
-    .skillsContainer {
-        gap: 0.5rem;
-        div {
-            width: 155px;
-            height: 155px;
-        }
-        i {
-            font-size: 1.5rem;
-        }
-      }
-     
-    .contactContainer {
-        position: absolute;
-
-    }
-
-    .contact {
-        min-height: 90vh;
-    }
-
-    fieldset { 
-        width: 94%;
-        margin: 0 auto;
-        div {
-            width: 100%;
-        }
-    }
-
-    form {
+  form {
     flex-direction: column;
     flex-wrap: wrap;
     width: 90%;
     max-width: 400px;
     margin: 0 auto;
-        button,
-        label,
-        input,
-        textarea {
-            display: inline-block;
-            max-width: 400px;
-            width:100%;
-        }
+    button,
+    label,
+    input,
+    textarea {
+      display: inline-block;
+      max-width: 400px;
+      width: 100%;
     }
+  }
 }
-
 
 /* 420px screen-size devices and smaller */
 @media (max-width: 420px) {
-    .wrapper {
-        width: 94%;
-    }
+  .wrapper {
+    width: 94%;
+  }
 
-    .title {
-        margin-left: 0;
-        max-width: 100%;
-        &::after {
-            font-size: 1.6rem;        
-        }
-    }
-    
-    .aboutMeText {
-        padding: 0 0.8rem;
-    }
+  .flower {
+    height: 18vh;
+    right: 36%;
+  }
 
-    .emailHeader {
-        width: 95%;
-        padding-left: 20px;
+  .buttonDown1 {
+    padding-left: 25vw;
+  }
+  .title {
+    margin-left: 0;
+    max-width: 100%;
+    &::after {
+      font-size: 1.6rem;
     }
+  }
 
-    .contactHeader {
-        padding-bottom: 3rem;
-    }
+  .aboutMeText {
+    padding: 0 0.8rem;
+  }
 
-    fieldset { 
-        width: 85%;
-        padding: 0.8rem;
-    }
+  .emailHeader {
+    width: 95%;
+    padding-left: 20px;
+  }
 
-    form {
+  .contactHeader {
+    padding-bottom: 3rem;
+  }
+
+  fieldset {
+    width: 85%;
+    padding: 0.8rem;
+  }
+
+  form {
     flex-direction: column;
     flex-wrap: wrap;
     width: 300px;
-        button,
-        label,
-        input,
-        textarea {
-            width: 300px;
-        }
+    button,
+    label,
+    input,
+    textarea {
+      width: 300px;
     }
+  }
 
-    .contactContainer {
-        position: absolute;
-        bottom: -444vh;
-        left: 40%;
-        ul {
-            display: flex;
-            flex-direction: row;
-        }
+  .contactContainer {
+    position: absolute;
+    bottom: -527vh;
+    left: 35%;
+    ul {
+      display: flex;
+      flex-direction: row;
     }
-
+  }
 }
