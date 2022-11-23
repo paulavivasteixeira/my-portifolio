@@ -1,5 +1,15 @@
 @use "variables" as *;
 
+main {
+  background: $greenBg;
+}
+
+.aboutMe {
+  h3 {
+    margin: 0;
+  }
+}
+
 .aboutContainer {
   display: flex;
   min-height: 5vh;

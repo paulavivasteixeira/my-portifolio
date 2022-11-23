@@ -306,7 +306,7 @@ a:hover {
   outline: none;
 }
 a:focus {
-  outline: 2px solid #f1cddf;
+  outline: 2px solid #d9b2ba;
   padding: 1%;
 }
 
@@ -484,7 +484,7 @@ header a {
   border-radius: 3px;
 }
 .socialMediasLinks:hover i, .socialMediasLinks:focus i {
-  color: #f1cddf;
+  color: #d9b2ba;
   text-shadow: 5px 5px 5px rgb(85, 86, 86);
 }
 
@@ -507,12 +507,20 @@ header a {
 }
 .buttonDown1 i {
   border-radius: 40px;
-  border: 2px solid #f1cddf;
+  border: 2px solid #d9b2ba;
   text-align: center;
   padding-top: 2px;
-  background-color: #f1cddf;
+  background-color: #d9b2ba;
   font-size: 2.5rem;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
+}
+
+main {
+  background: rgba(186, 194, 171, 0.2862745098);
+}
+
+.aboutMe h3 {
+  margin: 0;
 }
 
 .aboutContainer {
@@ -559,8 +567,8 @@ header a {
   width: 35px;
   height: 35px;
   border-radius: 40px;
-  background-color: #f1cddf;
-  border: 2px solid #f1cddf;
+  background-color: #d9b2ba;
+  border: 2px solid #d9b2ba;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
   padding-top: 2px;
   bottom: 1rem;
@@ -620,7 +628,7 @@ header a {
   font-size: 43px;
 }
 .material-symbols-outlined:hover {
-  color: #f1cddf;
+  color: #d9b2ba;
 }
 
 .projects {
@@ -686,11 +694,11 @@ header a {
   text-align: center;
   font-size: 1rem;
   padding: 5px 15px;
-  background-color: #f1cddf;
+  background-color: #d9b2ba;
 }
 .projectLinkStyle:hover, .projectLinkStyle:focus {
   background-color: #20413A;
-  color: #f1cddf;
+  color: #d9b2ba;
 }
 
 .contact {
@@ -763,7 +771,7 @@ form button {
   transition: 0.3s;
 }
 form button:hover, form button:focus {
-  background-color: #f1cddf;
+  background-color: #d9b2ba;
   color: #20413A;
   box-shadow: none;
 }
@@ -793,7 +801,7 @@ textarea {
 input:hover, input:focus,
 textarea:hover,
 textarea:focus {
-  border: 1px solid #f1cddf;
+  border: 1px solid #d9b2ba;
   background-color: hsl(0deg, 79%, 99%);
 }
 
@@ -811,10 +819,10 @@ textarea {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  border: 2px solid #f1cddf;
+  border: 2px solid #d9b2ba;
   text-align: center;
   padding-top: 10px;
-  background-color: #f1cddf;
+  background-color: #d9b2ba;
   color: #fff;
   box-shadow: 3px 3px 3px 3px rgba(134, 132, 132, 0.495);
   transition: 0.3s;
@@ -825,7 +833,7 @@ textarea {
 }
 
 footer {
-  background-color: rgba(186, 194, 171, 0.2862745098);
+  background-color: #BaC2AB;
 }
 
 .footerContainer {
@@ -1148,7 +1156,7 @@ form textarea {
     padding-top: 10px;
   }
   .navMenu .navItem:hover {
-    color: #f1cddf;
+    color: #d9b2ba;
     background-color: #20413A;
     transition: 0.2s;
   }
@@ -1157,7 +1165,7 @@ form textarea {
     color: #20413A;
   }
   .navMenu .navItem a:hover {
-    color: #f1cddf;
+    color: #d9b2ba;
     background-color: #20413A;
     transform: scale(1.5);
     border: none;
