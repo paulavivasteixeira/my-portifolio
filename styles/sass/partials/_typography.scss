@@ -2,22 +2,10 @@
 
 // Font types
 
-// Lora Regular
+// Source Sans Pro 
 @font-face {
-  font-family: "Lora Regular";
-  src: url("../../fonts/Lora/static/Lora-Regular.ttf");
-}
-
-// Lora Italic
-@font-face {
-  font-family: "Lora Italic";
-  src: url("../../fonts/Lora/static/Lora-Italic.ttf");
-}
-
-// Roboto Bold
-@font-face {
-  font-family: "Roboto Bold";
-  src: url(../../fonts/Roboto/Roboto-Bold.ttf);
+font-family: "Source Sans Pro";
+src: url("../../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf")
 }
 
 
@@ -55,11 +43,10 @@ h3 {
 
 h4 {
   font-family: 'Aboreto';
-  font-size: clamp(1.2rem, 0.996rem + 1.0045vw, 1.9rem);
+  font-size: clamp(1rem, 0.8834rem + 0.574vw, 1.4rem);
   color: $darkColor;
-  line-height:clamp(1.2rem, 0.996rem + 1.0045vw, 1.9rem);
+  line-height:clamp(1rem, 0.8834rem + 0.574vw, 1.4rem);
   margin: 0;
-  padding-top: 1.5rem;
 }
 
 article,
@@ -72,6 +59,3 @@ a {
   color: $darkColor;
 }
 
-legend {
-  font-family: 'Lora Italic';
-}

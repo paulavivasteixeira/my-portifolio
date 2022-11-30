@@ -13,7 +13,7 @@
     position: relative;
     &:hover,
     &:focus {
-      background-color: #bac2abbb;
+      background-color: #bac2abe8;
       border: none;
     }
   }
@@ -22,7 +22,7 @@
     position: absolute;
     height: 240px;
     width: 320px;
-    background-color: #bac2abbb;
+    background-color: #bac2abfb;
     overflow: hidden;
     transition: 0.5s;
     top: -105%;
@@ -37,6 +37,7 @@
         transition: 0.2s;
       }
       a {
+        z-index:10;
         padding: 12px 130px;
         color: $darkColor;
         &:hover{

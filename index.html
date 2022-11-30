@@ -89,21 +89,23 @@
     <main class="mainSection" id="mainContent">
       
       <!-- About Session starts here -->
-      <section class="aboutMe wrapper" id="about">
-        <h3>Hi, I'm Paula</h3>
-        <div class="aboutContainer">
-          <div class="profileImg">
-            <img src="./assets/cartoon1.png" alt="Paula's headshot. Paula has light skin, dark brown hair and eyes. She is wearing a black shirts and blazer, and a red lipstick" />
-          </div>
-          <div class="aboutMeText">
-            <p>A Front-End developer graduated at <a href="https://junocollege.com/">Juno College of Technology</a>. I also have a degree in Public Relations and  14 years of experience in event planning for for-non-profit organizations and public institutions.</p>
-            <p> I bring to web development my organization, communications and problem-solving skills. All my projects are focused on creating inclusive experiences.</p>
+      <section class="aboutMe" id="about">
+        <div class="wrapper" >
+          <h3>Hi, I'm Paula</h3>
+          <div class="aboutContainer">
+            <div class="profileImg">
+              <img src="./assets/cartoon1.png" alt="Paula's headshot. Paula has light skin, dark brown hair and eyes. She is wearing a black shirts and blazer, and a red lipstick" />
             </div>
-        </div>
+            <div class="aboutMeText">
+              <p>A Front-End developer graduated at <a href="https://junocollege.com/">Juno College of Technology</a>. I also have a degree in Public Relations and  14 years of experience in event planning for for-non-profit organizations and public institutions.</p>
+              <p> I bring to web development my organization, communications and problem-solving skills. All my projects are focused on creating inclusive experiences.</p>
+              </div>
+          </div>
 
-        <div class="buttonDown4">
-          <a class="buttonStyle btnStyleHeader" href="#skills" aria-label="go to skills section."><i class="fa-solid fa-angle-down downMain"></i></a>
-        </div>
+          <div class="buttonDown4">
+            <a class="buttonStyle btnStyleHeader" href="#skills" aria-label="go to skills section."><i class="fa-solid fa-angle-down downMain"></i></a>
+          </div>
+        </div>  
       </section>
       
       <!-- Skills Session starts here -->
@@ -173,22 +175,25 @@
       <!-- Projects Session starts here -->
       <section class="projectsSection" id="projects">
         
-        <div class="projects wrapper">
+        <div class="projects">
           <div class="projectsHeader">
             <h3>Projects</h3>
           </div>
           
-          <div class="projectsContainer">
+          <div class="projectsContainer wrapper">
             <div class="project1">
               <div class="projectImg">
                 <img src="./assets/auroraProject.png" alt="screenshot of Arora's website"> 
               </div>
               <div class="projectContainerLocal">
-                <div>
+                <div class="containerLocalContent">
                   <h4>Arora</h4>
-                  <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></p>
-                  <a class="projectLinkStyle" href="https://github.com/paulavivasteixeira/Arora">GitHub Repo</a>
-                  <a class="projectLinkStyle" href="https://sage-kulfi-94e866.netlify.app">Live Site</a>
+                  <div class="projectsExternalLinks">
+                    <a class="projectLinkStyle" href="https://github.com/paulavivasteixeira/Arora"><i class="fa-brands fa-github"></i></a>
+  
+                    <a class="projectLinkStyle" href="https://sage-kulfi-94e866.netlify.app"><i class="fa-solid fa-desktop"></i></a>
+                  </div>
+                  <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i></p>
                 </div>
               </div>
             </div>
@@ -198,11 +203,13 @@
                 <img src="./assets/underTheSea.png" alt="screenshot of the Under the Sea's website"> 
               </div>
               <div class="projectContainerLocal">
-                <div>
+                <div class="containerLocalContent">
                   <h4>Under the Sea</h4>
+                  <div class="projectsExternalLinks">
+                    <a class="projectLinkStyle" href="https://github.com/paulavivasteixeira/under-the-sea"><i class="fa-brands fa-github"></i></a>
+                    <a class="projectLinkStyle" href="https://under-the-sea-paula.netlify.app/"><i class="fa-solid fa-desktop"></i></a>
+                  </div>
                   <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i></p>
-                  <a class="projectLinkStyle" href="https://github.com/paulavivasteixeira/under-the-sea">GitHub Repo</a>
-                  <a class="projectLinkStyle" href="https://under-the-sea-paula.netlify.app/">Live Site</a>
                 </div>
               </div>
             </div>
@@ -212,11 +219,13 @@
                 <img src="./assets/queenquote.png" alt="screenshot of the Queen Quotes Quiz's website"> 
               </div>
               <div class="projectContainerLocal">
-                <div>
+                <div class="containerLocalContent">
                   <h4>Queen's Quote</h4>
+                  <div class="projectsExternalLinks">
+                    <a class="projectLinkStyle" href="https://github.com/junoProjectTwo/queenQuotes"><i class="fa-brands fa-github"></i></a>
+                    <a  class="projectLinkStyle" href="https://queenquotes.netlify.app/"><i class="fa-solid fa-desktop"></i></a>
+                  </div>
                   <p class="toolsDescription">Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i></p>
-                  <a class="projectLinkStyle" href="https://github.com/junoProjectTwo/queenQuotes">GitHub Repo</a>
-                  <a  class="projectLinkStyle" href="https://queenquotes.netlify.app/">Live Site</a>
                 </div>
               </div>
             </div>
@@ -226,11 +235,13 @@
                 <img src="./assets/pokemonDetective.jpg" alt="screenshot of the Pokemon Detective's website"> 
               </div>
               <div class="projectContainerLocal">
-                <div>
+                <div class="containerLocalContent">
                   <h4>Pokemon Detective</h4> 
+                  <div class="projectsExternalLinks">
+                    <a class="projectLinkStyle" href="https://github.com/Detective-Pokemon-44"><i class="fa-brands fa-github"></i></a>
+                    <a class="projectLinkStyle" href="#"><i class="fa-solid fa-desktop"></i></a>
+                  </div>
                   <p class="toolsDescription"> Built with: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> <i class="fa-brands fa-sass"></i><i class="fa-brands fa-react"></i></p>
-                  <a class="projectLinkStyle" href="https://github.com/Detective-Pokemon-44">GitHub Repo</a>
-                  <a class="projectLinkStyle" href="#">Live Site</a>
                 </div>
               </div>  
             </div>       
