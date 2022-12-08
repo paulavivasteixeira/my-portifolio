@@ -422,6 +422,27 @@ header a {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.flower .pc {
+  border: 2px solid rgb(19, 19, 19);
+  width: 280px;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  transform: rotateX(10deg);
+}
+.flower .pc::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  z-index: 5;
+  border: 2px solid black;
+  width: 300px;
+  height: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 @-webkit-keyframes falling {
   0% {
@@ -672,7 +693,6 @@ main {
 
 .projectImg {
   max-width: 720px;
-  min-height: 370px;
 }
 .projectImg img {
   -o-object-fit: cover;
