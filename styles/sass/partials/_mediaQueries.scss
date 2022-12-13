@@ -101,12 +101,13 @@
     padding-top: 5rem;
     .projectContainerLocal {
       width: 65%;
-      min-width: 380px;
+      min-width: 320px;
       min-height: 110px;
       margin-top: -2rem;
     }
     .containerLocalContent {
       flex-direction: row;
+      justify-content: space-around;
       h4 {
         flex-basis: 100%;
       }
@@ -152,10 +153,10 @@
   }
 }
 
-/* 800px screen-size devices and smaller */
+/* 840px screen-size devices and smaller */
 @media (max-width: 840px) {
   .wrapper {
-    width: 90%;
+    width: 94%;
   }
 
   .title {
@@ -202,33 +203,36 @@
     }
   }
 
+  .projectsContainer {
+    gap: 0.1rem;
+  }
 
-  // .project1,
-  // .project2,
-  // .project3,
-  // .project4 {
-  //   flex-direction: column;
-  //   width: 80%;
-  //   padding-top: 4rem;
-  //   .projectContainerLocal {
-  //     width: 65%;
-  //     min-width: 380px;
-  //     min-height: 110px;
-  //     margin-top: -2rem;
-  //     h4 {
-  //       flex-basis: 100%;
-  //     }
-  //   }
-  // }
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    flex-direction: column;
+    width: 80%;
+    padding-top: 4rem;
+    .projectContainerLocal {
+      width: 95%;
+      min-width: 335px;
+      min-height: 110px;
+      margin-top: -1.5rem;
+      h4 {
+        flex-basis: 100%;
+      }
+    }
+  }
 
   .containerLocalContent {
-    width: 70%;
+    width: 95%;
     min-height: 120px;
 }
 
   .projectsExternalLinks {
     width: 115px;
-    margin-right: 2rem;
+    margin-right: 0;
   }
 
   .contactContainer {

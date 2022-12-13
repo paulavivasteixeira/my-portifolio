@@ -422,27 +422,6 @@ header a {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.flower .pc {
-  border: 2px solid rgb(19, 19, 19);
-  width: 280px;
-  height: 150px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  position: relative;
-  transform: rotateX(10deg);
-}
-.flower .pc::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: -10px;
-  z-index: 5;
-  border: 2px solid black;
-  width: 300px;
-  height: 10px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
 
 @-webkit-keyframes falling {
   0% {
@@ -1049,7 +1028,7 @@ footer {
 .project3 .projectContainerLocal,
 .project4 .projectContainerLocal {
     width: 65%;
-    min-width: 380px;
+    min-width: 320px;
     min-height: 110px;
     margin-top: -2rem;
   }
@@ -1058,6 +1037,7 @@ footer {
 .project3 .containerLocalContent,
 .project4 .containerLocalContent {
     flex-direction: row;
+    justify-content: space-around;
   }
   .project1 .containerLocalContent h4,
 .project2 .containerLocalContent h4,
@@ -1092,10 +1072,10 @@ footer {
     right: 9vw;
   }
 }
-/* 800px screen-size devices and smaller */
+/* 840px screen-size devices and smaller */
 @media (max-width: 840px) {
   .wrapper {
-    width: 90%;
+    width: 94%;
   }
   .title {
     text-align: center;
@@ -1133,13 +1113,39 @@ footer {
   .skillsContainer i {
     font-size: 1.5rem;
   }
+  .projectsContainer {
+    gap: 0.1rem;
+  }
+  .project1,
+.project2,
+.project3,
+.project4 {
+    flex-direction: column;
+    width: 80%;
+    padding-top: 4rem;
+  }
+  .project1 .projectContainerLocal,
+.project2 .projectContainerLocal,
+.project3 .projectContainerLocal,
+.project4 .projectContainerLocal {
+    width: 95%;
+    min-width: 335px;
+    min-height: 110px;
+    margin-top: -1.5rem;
+  }
+  .project1 .projectContainerLocal h4,
+.project2 .projectContainerLocal h4,
+.project3 .projectContainerLocal h4,
+.project4 .projectContainerLocal h4 {
+    flex-basis: 100%;
+  }
   .containerLocalContent {
-    width: 70%;
+    width: 95%;
     min-height: 120px;
   }
   .projectsExternalLinks {
     width: 115px;
-    margin-right: 2rem;
+    margin-right: 0;
   }
   .contactContainer {
     position: absolute;
