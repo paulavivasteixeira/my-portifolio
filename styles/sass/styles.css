@@ -257,7 +257,7 @@ h3 {
 
 h4 {
   font-family: "Aboreto";
-  font-size: clamp(1rem, 0.8834rem + 0.574vw, 1.4rem);
+  font-size: clamp(1rem, 0.8834rem + 0.574vw, 1.1rem);
   color: #20413A;
   line-height: clamp(1rem, 0.8834rem + 0.574vw, 1.4rem);
   margin: 0;
@@ -298,22 +298,13 @@ a:focus {
 }
 
 i {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .buttonStyle {
   position: absolute;
-  -webkit-animation: bounce 0.5s infinite;
-          animation: bounce 0.5s infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes bounce {
-  1% {
-    height: 2px;
-    transform: translateY(2px);
-  }
+  animation: bounce 0.5s infinite;
+  animation-direction: alternate;
 }
 
 @keyframes bounce {
@@ -362,26 +353,11 @@ header a {
   margin: 0 auto;
   justify-content: center;
   position: relative;
-  -webkit-animation: 1s ease-in 1 expand;
-          animation: 1s ease-in 1 expand;
+  animation: 1s ease-in 1 expand;
 }
 
 .expand {
-  -webkit-animation: expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-          animation: expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-
-@-webkit-keyframes expand {
-  0% {
-    letter-spacing: -0.4em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 @keyframes expand {
@@ -413,24 +389,13 @@ header a {
   position: absolute;
   bottom: 11%;
   right: 4%;
-  -webkit-animation: 1s ease-in 1 falling;
-          animation: 1s ease-in 1 falling;
+  animation: 1s ease-in 1 falling;
 }
 .flower img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-@-webkit-keyframes falling {
-  0% {
-    transform: translate3d(5rem, -2rem, -4rem) rotate(20deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
 }
 
 @keyframes falling {
@@ -829,7 +794,7 @@ input:hover, input:focus,
 textarea:hover,
 textarea:focus {
   border: 1px solid #d9b2ba;
-  background-color: hsl(0deg, 79%, 99%);
+  background-color: hsl(0, 79%, 99%);
 }
 
 textarea {
@@ -968,15 +933,6 @@ footer {
     transform: scaleX(-1);
     opacity: 1;
   }
-  @-webkit-keyframes falling {
-    0% {
-      transform: translate3d(15rem, -2rem, -4rem) rotate(20deg) scaleX(-1);
-      opacity: 0;
-    }
-    100% {
-      transform: translate3d(0, 0, 0) rotate(0deg), scaleX(-1);
-    }
-  }
   @keyframes falling {
     0% {
       transform: translate3d(15rem, -2rem, -4rem) rotate(20deg) scaleX(-1);
@@ -1016,44 +972,44 @@ footer {
     gap: 15.5rem;
   }
   .project1,
-.project2,
-.project3,
-.project4 {
+  .project2,
+  .project3,
+  .project4 {
     flex-direction: column;
     width: 80%;
     padding-top: 5rem;
   }
   .project1 .projectContainerLocal,
-.project2 .projectContainerLocal,
-.project3 .projectContainerLocal,
-.project4 .projectContainerLocal {
+  .project2 .projectContainerLocal,
+  .project3 .projectContainerLocal,
+  .project4 .projectContainerLocal {
     width: 65%;
     min-width: 320px;
     min-height: 110px;
     margin-top: -2rem;
   }
   .project1 .containerLocalContent,
-.project2 .containerLocalContent,
-.project3 .containerLocalContent,
-.project4 .containerLocalContent {
+  .project2 .containerLocalContent,
+  .project3 .containerLocalContent,
+  .project4 .containerLocalContent {
     flex-direction: row;
     justify-content: space-around;
   }
   .project1 .containerLocalContent h4,
-.project2 .containerLocalContent h4,
-.project3 .containerLocalContent h4,
-.project4 .containerLocalContent h4 {
+  .project2 .containerLocalContent h4,
+  .project3 .containerLocalContent h4,
+  .project4 .containerLocalContent h4 {
     flex-basis: 100%;
   }
   .projectsContainer {
     gap: 0.5rem;
   }
   .project1 .projectContainerLocal,
-.project3 .projectContainerLocal {
+  .project3 .projectContainerLocal {
     margin-left: 0;
   }
   .project2 .projectContainerLocal,
-.project4 .projectContainerLocal {
+  .project4 .projectContainerLocal {
     margin-right: 0;
   }
   .contact {
@@ -1117,26 +1073,26 @@ footer {
     gap: 0.1rem;
   }
   .project1,
-.project2,
-.project3,
-.project4 {
+  .project2,
+  .project3,
+  .project4 {
     flex-direction: column;
     width: 80%;
     padding-top: 4rem;
   }
   .project1 .projectContainerLocal,
-.project2 .projectContainerLocal,
-.project3 .projectContainerLocal,
-.project4 .projectContainerLocal {
+  .project2 .projectContainerLocal,
+  .project3 .projectContainerLocal,
+  .project4 .projectContainerLocal {
     width: 95%;
     min-width: 335px;
     min-height: 110px;
     margin-top: -1.5rem;
   }
   .project1 .projectContainerLocal h4,
-.project2 .projectContainerLocal h4,
-.project3 .projectContainerLocal h4,
-.project4 .projectContainerLocal h4 {
+  .project2 .projectContainerLocal h4,
+  .project3 .projectContainerLocal h4,
+  .project4 .projectContainerLocal h4 {
     flex-basis: 100%;
   }
   .containerLocalContent {
@@ -1168,9 +1124,9 @@ footer {
     margin: 0 auto;
   }
   form button,
-form label,
-form input,
-form textarea {
+  form label,
+  form input,
+  form textarea {
     display: inline-block;
     max-width: 400px;
     width: 100%;
@@ -1210,9 +1166,9 @@ form textarea {
     height: 145px;
   }
   .project1,
-.project2,
-.project3,
-.project4 {
+  .project2,
+  .project3,
+  .project4 {
     padding-top: 0;
   }
   .projectImg {
@@ -1239,9 +1195,9 @@ form textarea {
     width: 300px;
   }
   form button,
-form label,
-form input,
-form textarea {
+  form label,
+  form input,
+  form textarea {
     width: 300px;
   }
   .contactContainer {
